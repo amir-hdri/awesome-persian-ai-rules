@@ -20,11 +20,14 @@ These rules apply to all Persian responses and mixed Persian/English conversatio
    - For numbered lists, steps, and options, use modern circular monospace badges:
      `<span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:12px;font-family:ui-monospace,monospace;margin-left:8px;">1</span>`
 
-4. **BiDi Isolation for Slashes, Issue Numbers, Paths, and Badges**:
-   - ALL issue numbers with hashtags (e.g. `<span dir="ltr"><strong><code>#42</code></strong></span>`), version numbers (`<span dir="ltr">v1.0.0</span>`), slash commands, paths, and technical tokens in prose text MUST ALWAYS be wrapped in `<span dir="ltr">...</span>` so symbols like `#`, `/`, `@` are strictly on the left before the number, never flipped to the right side.
-   - All status badges and indicators (e.g. `<span dir="ltr">● online</span>`) MUST have `dir="ltr"` explicitly set so that the dot (`●`) or symbol is placed strictly on the left side before the English word.
+4. **BiDi Isolation for Slashes, Issue Numbers (#93), Paths, and Badges**:
+   - For slash commands, paths, and code tokens (e.g. `/cairn:work 1`, `#93`), anchor them with Unicode LRM (`\u200e`) directly before the leading symbol (e.g. `‎/cairn:work 1` or `‎#93`) inside standard markdown backticks.
+   - NEVER wrap HTML tags inside markdown backticks (e.g. NEVER write `` `<code dir="ltr">...</code>` `` or `` `<span dir="ltr">...</span>` ``), as markdown renderers display raw escaped HTML text instead of formatted code.
+   - All status badges and indicators (e.g. `‎● all systems green‎`) must keep the symbol strictly on the left side before the English word.
 
-5. **Developer-Grade Minimal Cards & High-Contrast Badges**:
-   - Never use pale, washed-out neon colors for small text.
-   - Use high-contrast, comfortable colors: either `color: inherit;` or deep saturated tones (`#0284c7`, `#047857`, `#b45309`).
+5. **Developer-Grade Compact Tables & RTL Layout**:
+   - **RTL Column Order**: In Persian RTL reading order (right-to-left), the primary descriptive column (e.g. **کاربرد** یا عنوان) MUST ALWAYS be the FIRST column in the table definition (e.g. `| کاربرد | دستور اسلش |`), so the browser renders it on the far right.
+   - **Text Alignment (Right-Align)**: Always use right-alignment (`---:`) for text columns so that Persian descriptions and headers are strictly right-aligned, avoiding accidental left-alignment (`:---`).
+   - **Clean Markdown Tables**: Use standard clean GitHub Flavored Markdown tables. Avoid raw unrendered HTML `<table>` blocks or unescaped HTML tags inside table cells.
+   - **High-Contrast Badges**: Never use pale, washed-out neon colors for small text. Use high-contrast, comfortable colors (`#0284c7`, `#047857`, `#b45309`) on subtle translucent backgrounds with at least 12px font size.
 ```

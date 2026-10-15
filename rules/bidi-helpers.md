@@ -11,7 +11,7 @@ Certain characters are categorized as **Neutrals** or **Weak Types**, which caus
 | :---: | :--- | :--- | :--- |
 | `#` | Hash / Number sign | Appears *after* the number (`42#`) | `<span dir="ltr">#42</span>` |
 | `●` / `•` | Bullet / Indicator Dot | Jumps to the end/right of the line | `<span dir="ltr">● Status</span>` |
-| `/` | Slash | Inverts path hierarchy or command syntax | `<span dir="ltr">/cmd</span>` |
+| `/` | Slash | Inverts path hierarchy or command syntax (`cmd/`) | `‎/cmd` (Unicode LRM) or `<span dir="ltr">/cmd</span>` |
 | `-` | Hyphen / Dash | Flips range (`10-20` becomes `20-10`) | `<span dir="ltr">10-20</span>` |
 | `.` | Period / Dot | Flips from left to right in ordered lists | Use Circular Badge (Option A) |
 | `@` | At sign | Placed on the right of usernames/handles | `<span dir="ltr">@user</span>` |
@@ -39,12 +39,18 @@ Certain characters are categorized as **Neutrals** or **Weak Types**, which caus
 ```
 
 ### File Paths & CLI Commands
-```html
-<!-- Bad -->
-فایل config/settings.json ویرایش شد و دستور git checkout -b feature اجرا شد.
+```markdown
+<!-- Bad (RTL flips slash to right end) -->
+دستور /cairn:status اجرا شد. (نمایش بصری: cairn:status/)
 
-<!-- Good -->
-فایل <span dir="ltr"><code>config/settings.json</code></span> ویرایش شد و دستور <span dir="ltr"><code>git checkout -b feature</code></span> اجرا شد.
+<!-- Bad (Anti-pattern: HTML nested inside markdown backticks renders as raw escaped code) -->
+دستور `<code dir="ltr">/cairn:status</code>` اجرا شد.
+
+<!-- Good (Pure Markdown with Unicode LRM \u200e before slash) -->
+دستور `‎/cairn:status` اجرا شد.
+
+<!-- Good (HTML outside backticks) -->
+دستور <span dir="ltr"><code>/cairn:status</code></span> اجرا شد.
 ```
 
 ### Version Tags
@@ -65,3 +71,21 @@ Replace raw `1.`, `2.` with this drop-in HTML snippet:
 ```html
 <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:12px;font-family:ui-monospace,monospace;margin-left:8px;">1</span>
 ```
+
+---
+
+## 4. RTL Markdown Tables Checklist
+
+When rendering tables in Persian RTL mode:
+
+1. **Column Order**: The primary descriptive column (e.g. **کاربرد**, توضیحات) MUST be the **first column** in markdown, placing it on the right side in RTL.
+2. **Right Alignment**: Headers must use `---:` (right-align) instead of `:---` (left-align).
+3. **Slash Commands in Cells**: Inside table cells, wrap slash commands with Unicode LRM `\u200e` before the slash: `` `‎/command` ``.
+
+```markdown
+| کاربرد | دستور اسلش |
+| ---: | ---: |
+| بررسی وضعیت پروژه | `‎/cairn:status` |
+| برنامه‌ریزی فاز جدید | `‎/cairn:plan 1` |
+```
+

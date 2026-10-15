@@ -36,11 +36,14 @@ You **must** isolate these elements with an explicit LTR wrapper:
   - ❌ Incorrect: `● online` (renders with dot on the right side)
   - ✅ Correct: `<span dir="ltr">● online</span>` (renders with dot on the left side)
 - **Slash Commands & Paths**:
-  - ❌ Incorrect: `/deploy` or `src/components/App.tsx` inside Persian prose
-  - ✅ Correct: `<span dir="ltr"><code>/deploy</code></span>`
+  - ❌ Incorrect in Markdown: `` `<span dir="ltr"><code>/deploy</code></span>` `` or `` `<code dir="ltr">/deploy</code>` `` (renders raw escaped HTML text in chat UI)
+  - ❌ Incorrect raw text: `/deploy` inside RTL text (the `/` flips to the end: `deploy/`)
+  - ✅ Correct in pure Markdown: `` `‎/deploy` `` (anchored with Unicode LRM `\u200e` before the slash inside standard backticks)
+  - ✅ Correct in HTML prose: `<span dir="ltr"><code>/deploy</code></span>` (only when outside backticks)
 - **Version Tags**:
   - ❌ Incorrect: `نسخه v1.0.0`
-  - ✅ Correct: `نسخه <span dir="ltr"><code>v1.0.0</code></span>`
+  - ✅ Correct: `نسخه <span dir="ltr"><code>v1.0.0</code></span>` or `نسخه `‎`v1.0.0`‎``
+- **Critical Anti-Pattern**: NEVER wrap HTML tags inside markdown backticks (e.g. NEVER write `` `<code dir="ltr">...</code>` `` or `` `<span dir="ltr">...</span>` ``), as chat markdown renderers escape them and display raw escaped HTML text instead of formatted code chips.
 
 ### 1.5 Emphasis and Code Entities
 - Highlight critical takeaways, conclusions, and verdicts in **bold**.
@@ -56,3 +59,10 @@ You **must** isolate these elements with an explicit LTR wrapper:
   - Info / Action: `color: #0284c7; background: rgba(56, 189, 248, 0.15);`
   - Warning: `color: #b45309; background: rgba(245, 158, 11, 0.12);`
   - Error: `color: #b91c1c; background: rgba(239, 68, 68, 0.12);`
+
+### 1.7 RTL Markdown Tables & Text Alignment
+- **RTL Column Reading Order**: In Persian RTL reading order (right-to-left), the primary descriptive column (e.g. **کاربرد** یا عنوان) MUST ALWAYS be defined as the **FIRST column** in the Markdown table (e.g. `| کاربرد | دستور اسلش |`), so the browser's RTL engine places it on the right side.
+- **Strict Right-Alignment (`---:`)**: All text columns must be right-aligned using `---:` instead of default or left-alignment (`:---`), ensuring Persian descriptions and headers are aligned to the right.
+- **Slash Commands in Table Cells**: Anchor commands with Unicode LRM (`\u200e`) before the leading slash inside backticks (e.g. `` `‎/cairn:status` ``), ensuring the slash stays on the left of the command name.
+- **Clean Markdown Tables**: Always generate standard GitHub Flavored Markdown tables. Avoid raw unrendered HTML `<table>` blocks or unescaped HTML tags inside table cells.
+

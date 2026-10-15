@@ -14,11 +14,13 @@ When responding in Persian or handling mixed Persian/English discussions, strict
    `<span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:12px;font-family:ui-monospace,monospace;margin-left:8px;">1</span>`
 
 4. **BiDi Token Isolation**:
-   Wrap any issue identifier with a hashtag (`#`), version tag, CLI command, slash command, or status bullet in `<span dir="ltr">...</span>`:
-   - Issues: `<span dir="ltr"><strong><code>#42</code></strong></span>`
-   - Status indicators: `<span dir="ltr">● online</span>`
-   - Slash commands: `<span dir="ltr"><code>/commit</code></span>`
+   - For markdown backticks, anchor slash commands with Unicode LRM (`\u200e`) before the slash: `‎/commit`. Never put HTML tags inside backticks.
+   - For HTML text: `<span dir="ltr"><strong><code>#42</code></strong></span>`, `<span dir="ltr">● online</span>`.
 
 5. **Entity Formatting**:
    Bold critical terms and wrap tools/code elements in **`bold code`** (e.g. **`GitHub`**, **`main`**).
    Enclose technical terms inside Persian text in parentheses where appropriate: (فریم‌ورک **`React`**).
+
+6. **RTL Tables**:
+   In Persian tables, always place the descriptive column (e.g. کاربرد) as the first column so it appears on the right, and use `---:` (right-align) for table headers.
+

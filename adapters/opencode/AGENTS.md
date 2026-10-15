@@ -15,11 +15,13 @@ When replying in Persian or conducting mixed language tasks:
    `<span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:12px;font-family:ui-monospace,monospace;margin-left:8px;">1</span>`
 
 4. **BiDi Neutral Isolation**:
-   Isolate issue numbers, status dots, commands, and version tags using `<span dir="ltr">...</span>`:
-   - Issues: `<span dir="ltr"><strong><code>#42</code></strong></span>`
-   - Statuses: `<span dir="ltr">● healthy</span>`
-   - Commands: `<span dir="ltr"><code>/status</code></span>`
+   - For markdown backticks, anchor slash commands with Unicode LRM (`\u200e`) before the slash: `‎/status`. Never nest HTML tags inside backticks.
+   - For HTML text: `<span dir="ltr"><strong><code>#42</code></strong></span>`, `<span dir="ltr">● healthy</span>`.
 
 5. **Entity Highlighting**:
    Highlight technical entities in **`bold code`** (e.g. **`OpenCode`**, **`GitHub`**, **`Docker`**).
    Enclose English technical terms inside Persian text in parentheses: (ریپازیتوری **`GitHub`**).
+
+6. **RTL Tables**:
+   In Persian tables, place the descriptive column (e.g. کاربرد) as the first column so it renders on the right, and use `---:` (right-align) for table headers.
+
