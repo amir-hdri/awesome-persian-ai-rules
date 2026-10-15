@@ -1,16 +1,17 @@
 <p align="center">
-  <h1 align="center">🇮🇷 Persian Agent Rules & BiDi Standards</h1>
+  <h1 align="center">🇮🇷 Awesome Persian AI Rules & BiDi Standards</h1>
   <p align="center">
-    <strong>قوانین استاندارد تایپوگرافی، راست‌به‌چپ (RTL) و حل قطعی باگ‌های BiDi برای تمامی ایجنت‌های هوش مصنوعی و کدنویسی</strong>
+    <strong>قوانین استاندارد، تایپوگرافی، راست‌به‌چپ (RTL) و حل قطعی باگ‌های BiDi برای تمامی ایجنت‌های هوش مصنوعی و کدنویسی</strong>
   </p>
   <p align="center">
-    <em>Universal Persian (Farsi) typography, RTL layout, and Bidirectional (BiDi) formatting standards for AI Coding Assistants & LLMs.</em>
+    <em>Curated universal Persian (Farsi) typography, RTL layout, and Bidirectional (BiDi) formatting standards for AI Coding Assistants & LLMs.</em>
   </p>
 </p>
 
 <p align="center">
-  <a href="https://github.com/amir-hdri/persian-agent-rules/stargazers"><img src="https://img.shields.io/github/stars/amir-hdri/persian-agent-rules?style=for-the-badge&logo=github&color=0284c7" alt="GitHub Stars" /></a>
-  <a href="https://github.com/amir-hdri/persian-agent-rules/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-047857?style=for-the-badge" alt="License" /></a>
+  <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome" /></a>
+  <a href="https://github.com/amir-hdri/awesome-persian-ai-rules/stargazers"><img src="https://img.shields.io/github/stars/amir-hdri/awesome-persian-ai-rules?style=for-the-badge&logo=github&color=0284c7" alt="GitHub Stars" /></a>
+  <a href="https://github.com/amir-hdri/awesome-persian-ai-rules/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-047857?style=for-the-badge" alt="License" /></a>
   <a href="#-supported-ai-agents"><img src="https://img.shields.io/badge/Agents-Cursor%20%7C%20Claude%20%7C%20Antigravity%20%7C%20OpenCode%20%7C%20Windsurf%20%7C%20Copilot-b45309?style=for-the-badge" alt="Supported Agents" /></a>
   <img src="https://img.shields.io/badge/BiDi-100%25%20Verified-0284c7?style=for-the-badge" alt="BiDi Verified" />
 </p>
@@ -23,13 +24,13 @@
 
 ```bash
 # نصب خودکار برای تمامی ایجنت‌های موجود در پوشه جاری:
-curl -fsSL https://raw.githubusercontent.com/amir-hdri/persian-agent-rules/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/amir-hdri/awesome-persian-ai-rules/main/install.sh | bash
 
 # یا پیکربندی یک ایجنت مشخص:
-curl -fsSL https://raw.githubusercontent.com/amir-hdri/persian-agent-rules/main/install.sh | bash -s -- --agent cursor
-curl -fsSL https://raw.githubusercontent.com/amir-hdri/persian-agent-rules/main/install.sh | bash -s -- --agent claude
-curl -fsSL https://raw.githubusercontent.com/amir-hdri/persian-agent-rules/main/install.sh | bash -s -- --agent opencode
-curl -fsSL https://raw.githubusercontent.com/amir-hdri/persian-agent-rules/main/install.sh | bash -s -- --agent antigravity
+curl -fsSL https://raw.githubusercontent.com/amir-hdri/awesome-persian-ai-rules/main/install.sh | bash -s -- --agent cursor
+curl -fsSL https://raw.githubusercontent.com/amir-hdri/awesome-persian-ai-rules/main/install.sh | bash -s -- --agent claude
+curl -fsSL https://raw.githubusercontent.com/amir-hdri/awesome-persian-ai-rules/main/install.sh | bash -s -- --agent opencode
+curl -fsSL https://raw.githubusercontent.com/amir-hdri/awesome-persian-ai-rules/main/install.sh | bash -s -- --agent antigravity
 ```
 
 ---
@@ -53,7 +54,7 @@ curl -fsSL https://raw.githubusercontent.com/amir-hdri/persian-agent-rules/main/
 
 ## 📊 Before vs. After (مقایسه قبل و بعد)
 
-| مورد بررسی | مارک‌داون معمولی (دارای باگ BiDi) | با استانداردهای Persian Agent Rules | نتیجه نهایی |
+| مورد بررسی | مارک‌داون معمولی (دارای باگ BiDi) | با استانداردهای Awesome Persian AI Rules | نتیجه نهایی |
 | :--- | :--- | :--- | :--- |
 | **شناسه ایشو** | `ایشو #93 بررسی شد` | `ایشو <span dir="ltr"><strong><code>#93</code></strong></span> بررسی شد` | ایشو <span dir="ltr"><strong><code>#93</code></strong></span> بررسی شد |
 | **لیست شماره‌دار** | `1. ثبت بارنامه` (رندر به صورت `.1 ثبت بارنامه`) | `<span style="...">1</span> ثبت بارنامه` | <span style="display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:11px;font-family:ui-monospace,monospace;">1</span> ثبت بارنامه |
@@ -80,7 +81,7 @@ curl -fsSL https://raw.githubusercontent.com/amir-hdri/persian-agent-rules/main/
 ## 🏗 Repository Structure (ساختار مخزن)
 
 ```text
-persian-agent-rules/
+awesome-persian-ai-rules/
 ├── README.md                      # راهنمای جامع و معرفی پروژه
 ├── LICENSE                        # مجوز متن‌باز MIT
 ├── install.sh                     # اسکریپت نصب یک‌خطی چند ایجنتی
@@ -127,13 +128,13 @@ persian-agent-rules/
 
 اگر این پروژه توانسته است مشکلات نگارشی و به‌هم‌ریختگی متون راست‌به‌چپ در ایجنت‌های هوش مصنوعی شما را حل کند، لطفاً با **ثبت ستاره (Star ⭐️)** از این پروژه حمایت کنید تا توسعه‌دهندگان بیشتری بتوانند از آن بهره‌مند شوند!
 
-[![Star History Chart](https://api.star-history.com/svg?repos=amir-hdri/persian-agent-rules&type=Date)](https://star-history.com/#amir-hdri/persian-agent-rules&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=amir-hdri/awesome-persian-ai-rules&type=Date)](https://star-history.com/#amir-hdri/awesome-persian-ai-rules&Date)
 
 ---
 
 ## 🏷️ Keywords & Topics (کلمات کلیدی و هشتگ‌ها)
 
-`#persian` `#farsi` `#rtl` `#bidi` `#ai-agents` `#cursor-rules` `#claude-code` `#opencode` `#windsurf` `#antigravity` `#github-copilot` `#llm` `#prompt-engineering` `#developer-tools` `#typography` `#bidirectional-text`
+`#awesome` `#awesome-list` `#persian` `#farsi` `#rtl` `#bidi` `#ai-agents` `#cursor-rules` `#claude-code` `#opencode` `#windsurf` `#antigravity` `#github-copilot` `#llm` `#prompt-engineering` `#developer-tools` `#typography` `#bidirectional-text`
 
 ---
 

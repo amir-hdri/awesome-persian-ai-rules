@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 # ==============================================================================
 # Persian Agent Rules - Universal Installer
-# Repository: https://github.com/amir-hdri/persian-agent-rules
+# Repository: https://github.com/amir-hdri/awesome-persian-ai-rules
 # License: MIT
 # ==============================================================================
 
 set -e
 
-RAW_BASE="https://raw.githubusercontent.com/amir-hdri/persian-agent-rules/main"
+RAW_BASE="https://raw.githubusercontent.com/amir-hdri/awesome-persian-ai-rules/main"
 TARGET_DIR="."
 AGENT="all"
 GLOBAL=false
@@ -220,5 +220,5 @@ esac
 
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo "✨ Persian Agent Rules successfully installed!"
-echo "⭐️ Star the repo: https://github.com/amir-hdri/persian-agent-rules"
+echo "⭐️ Star the repo: https://github.com/amir-hdri/awesome-persian-ai-rules"
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
