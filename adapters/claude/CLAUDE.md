@@ -15,10 +15,10 @@ When responding in Persian or handling mixed Persian/English discussions, strict
 
 4. **BiDi Token Isolation**:
    Wrap any issue identifier with a hashtag (`#`), version tag, CLI command, slash command, or status bullet in `<span dir="ltr">...</span>`:
-   - Issues: `<span dir="ltr"><strong><code>#93</code></strong></span>`
-   - Status indicators: `<span dir="ltr">● all systems green</span>`
+   - Issues: `<span dir="ltr"><strong><code>#42</code></strong></span>`
+   - Status indicators: `<span dir="ltr">● online</span>`
    - Slash commands: `<span dir="ltr"><code>/commit</code></span>`
 
 5. **Entity Formatting**:
    Bold critical terms and wrap tools/code elements in **`bold code`** (e.g. **`GitHub`**, **`main`**).
-   Enclose technical terms inside Persian text in parentheses where appropriate: (پلاگین **`Cairn`**).
+   Enclose technical terms inside Persian text in parentheses where appropriate: (فریم‌ورک **`React`**).

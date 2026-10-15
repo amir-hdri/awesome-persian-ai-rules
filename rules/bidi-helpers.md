@@ -9,7 +9,7 @@ Certain characters are categorized as **Neutrals** or **Weak Types**, which caus
 
 | Character | Name | Problem in RTL | Solution |
 | :---: | :--- | :--- | :--- |
-| `#` | Hash / Number sign | Appears *after* the number (`93#`) | `<span dir="ltr">#93</span>` |
+| `#` | Hash / Number sign | Appears *after* the number (`42#`) | `<span dir="ltr">#42</span>` |
 | `●` / `•` | Bullet / Indicator Dot | Jumps to the end/right of the line | `<span dir="ltr">● Status</span>` |
 | `/` | Slash | Inverts path hierarchy or command syntax | `<span dir="ltr">/cmd</span>` |
 | `-` | Hyphen / Dash | Flips range (`10-20` becomes `20-10`) | `<span dir="ltr">10-20</span>` |
@@ -23,10 +23,10 @@ Certain characters are categorized as **Neutrals** or **Weak Types**, which caus
 ### Issue Numbers & Commit Hashes
 ```html
 <!-- Bad -->
-ایشو #93 بررسی شد.
+ایشو #42 حل شد.
 
 <!-- Good -->
-ایشو <span dir="ltr"><strong><code>#93</code></strong></span> بررسی شد.
+ایشو <span dir="ltr"><strong><code>#42</code></strong></span> حل شد.
 ```
 
 ### System Status Indicators

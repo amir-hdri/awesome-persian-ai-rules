@@ -16,10 +16,10 @@ When replying in Persian or conducting mixed language tasks:
 
 4. **BiDi Neutral Isolation**:
    Isolate issue numbers, status dots, commands, and version tags using `<span dir="ltr">...</span>`:
-   - Issues: `<span dir="ltr"><strong><code>#93</code></strong></span>`
-   - Statuses: `<span dir="ltr">● zero-drift</span>`
-   - Commands: `<span dir="ltr"><code>/cairn-work</code></span>`
+   - Issues: `<span dir="ltr"><strong><code>#42</code></strong></span>`
+   - Statuses: `<span dir="ltr">● healthy</span>`
+   - Commands: `<span dir="ltr"><code>/status</code></span>`
 
 5. **Entity Highlighting**:
-   Highlight technical entities in **`bold code`** (e.g. **`OpenCode`**, **`GitHub`**, **`Cairn`**).
-   Enclose English technical terms inside Persian text in parentheses: (ترکر **`GitHub`**).
+   Highlight technical entities in **`bold code`** (e.g. **`OpenCode`**, **`GitHub`**, **`Docker`**).
+   Enclose English technical terms inside Persian text in parentheses: (ریپازیتوری **`GitHub`**).

@@ -30,24 +30,24 @@ In an RTL block, characters with neutral or weak Unicode directionality (`#`, `/
 You **must** isolate these elements with an explicit LTR wrapper:
 
 - **Issue Hashtags**:
-  - ❌ Incorrect: `ایشو #93` (renders visually as `ایشو 93#`)
-  - ✅ Correct: `ایشو <span dir="ltr"><strong><code>#93</code></strong></span>` (renders visually as `ایشو #93`)
+  - ❌ Incorrect: `ایشو #42` (renders visually as `ایشو 42#`)
+  - ✅ Correct: `ایشو <span dir="ltr"><strong><code>#42</code></strong></span>` (renders visually as `ایشو #42`)
 - **Status Indicators & Dots**:
-  - ❌ Incorrect: `● all systems green` (renders with dot on the right side)
-  - ✅ Correct: `<span dir="ltr">● all systems green</span>` (renders with dot on the left side)
+  - ❌ Incorrect: `● online` (renders with dot on the right side)
+  - ✅ Correct: `<span dir="ltr">● online</span>` (renders with dot on the left side)
 - **Slash Commands & Paths**:
-  - ❌ Incorrect: `/cairn-work` or `~/.gemini/config` inside Persian prose
-  - ✅ Correct: `<span dir="ltr"><code>/cairn-work</code></span>`
+  - ❌ Incorrect: `/deploy` or `src/components/App.tsx` inside Persian prose
+  - ✅ Correct: `<span dir="ltr"><code>/deploy</code></span>`
 - **Version Tags**:
-  - ❌ Incorrect: `نسخه v2.8.3`
-  - ✅ Correct: `نسخه <span dir="ltr"><code>v2.8.3</code></span>`
+  - ❌ Incorrect: `نسخه v1.0.0`
+  - ✅ Correct: `نسخه <span dir="ltr"><code>v1.0.0</code></span>`
 
 ### 1.5 Emphasis and Code Entities
 - Highlight critical takeaways, conclusions, and verdicts in **bold**.
 - Wrap names of tools, platforms, file paths, branch names, and code identifiers in **`bold code`**:
-  - Examples: **`OpenCode`**, **`GitHub`**, **`Antigravity`**, **`Cairn`**, **`main`**, **`config.json`**.
+  - Examples: **`React`**, **`Docker`**, **`PostgreSQL`**, **`GitHub`**, **`main`**, **`config.json`**.
 - When embedding English technical terms or tool names into Persian sentences, enclose them in parentheses where natural:
-  - Example: `(پلاگین **Cairn**) با (ترکر **GitHub**) در وضعیت (حالت **zero-drift**) هماهنگ شد.`
+  - Example: `(سرویس **Redis**) با (دیتابیس **PostgreSQL**) در وضعیت (حالت **active**) متصل شد.`
 
 ### 1.6 Developer-Grade Accessible Badges & Cards
 - Never use pale, washed-out neon colors (e.g. light cyan `#38bdf8`) on white backgrounds for text.

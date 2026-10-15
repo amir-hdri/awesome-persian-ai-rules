@@ -100,9 +100,9 @@ curl -fsSL https://raw.githubusercontent.com/amir-hdri/awesome-persian-ai-rules/
 ## 🎯 چرا این ریپازیتوری ایجاد شد؟
 
 پاسخ‌های فارسی در دستیارهای هوش مصنوعی (مانند **Cursor**، **Claude Code**، **OpenCode**، **Antigravity** و غیره) معمولاً با مشکلات ساختاری زیر مواجه می‌شوند:
-1. **جابه‌جایی هشتگ در ایشوها**: عبارت <span dir="ltr"><code>#93</code></span> به صورت معکوس و به شکل `93#` رندر می‌شود.
+1. **جابه‌جایی هشتگ در ایشوها**: عبارت <span dir="ltr"><code>#42</code></span> به صورت معکوس و به شکل `42#` رندر می‌شود.
 2. **برعکس شدن نقطه در لیست‌ها**: در لیست‌های شماره‌دار استاندارد (`1.`، `2.`) نقطه در ابتدای خط و قبل از عدد رندر می‌شود (`.1`).
-3. **پریدن دات‌ها و نمادهای وضعیت**: دات وضعیت (<span dir="ltr"><code>● all systems green</code></span>) به انتهای جمله پرت می‌شود.
+3. **پریدن دات‌ها و نمادهای وضعیت**: دات وضعیت (<span dir="ltr"><code>● connected</code></span>) به انتهای جمله پرت می‌شود.
 4. **نامنظمی فاصله‌ها و فونت**: عدم استفاده از فونت سیستم مناسب و ارتفاع خط غیر استاندارد که خوانایی را کاهش می‌دهد.
 5. **ارقام نامتجانس**: تداخل ارقام فارسی و انگلیسی در اسکریپت‌ها، توکن‌های کد و کوئری‌ها.
 
@@ -116,11 +116,11 @@ curl -fsSL https://raw.githubusercontent.com/amir-hdri/awesome-persian-ai-rules/
 
 | مورد بررسی | مارک‌داون معمولی (دارای باگ BiDi) | با استانداردهای Awesome Persian AI Rules | نتیجه نهایی |
 | :--- | :--- | :--- | :--- |
-| **شناسه ایشو** | `ایشو #93 بررسی شد` | `ایشو <span dir="ltr"><strong><code>#93</code></strong></span> بررسی شد` | ایشو <span dir="ltr"><strong><code>#93</code></strong></span> بررسی شد |
-| **لیست شماره‌دار** | `1. ثبت بارنامه` (رندر به صورت `.1 ثبت بارنامه`) | `<span style="...">1</span> ثبت بارنامه` | <span style="display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:11px;font-family:ui-monospace,monospace;">1</span> ثبت بارنامه |
-| **نشانگر وضعیت** | `● all systems green` | `<span dir="ltr">● all systems green</span>` | <span dir="ltr" style="display:inline-flex;align-items:center;gap:4px;padding:2px 8px;border-radius:4px;background:rgba(16,185,129,0.12);color:#047857;font-weight:bold;font-size:12px;">● all systems green</span> |
-| **برچسب نسخه** | `نسخه v2.8.3` (رندر معکوس `2.8.3v`) | `نسخه <span dir="ltr"><code>v2.8.3</code></span>` | نسخه <span dir="ltr"><code>v2.8.3</code></span> |
-| **دستور و مسیر** | `/cairn-work` | `<span dir="ltr"><code>/cairn-work</code></span>` | <span dir="ltr"><code>/cairn-work</code></span> |
+| **شناسه ایشو** | `ایشو #42 حل شد` | `ایشو <span dir="ltr"><strong><code>#42</code></strong></span> حل شد` | ایشو <span dir="ltr"><strong><code>#42</code></strong></span> حل شد |
+| **لیست شماره‌دار** | `1. بهینه‌سازی دیتابیس` (رندر به صورت `.1 بهینه‌سازی دیتابیس`) | `<span style="...">1</span> بهینه‌سازی دیتابیس` | <span style="display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:11px;font-family:ui-monospace,monospace;">1</span> بهینه‌سازی دیتابیس |
+| **نشانگر وضعیت** | `● connected` | `<span dir="ltr">● connected</span>` | <span dir="ltr" style="display:inline-flex;align-items:center;gap:4px;padding:2px 8px;border-radius:4px;background:rgba(16,185,129,0.12);color:#047857;font-weight:bold;font-size:12px;">● connected</span> |
+| **برچسب نسخه** | `نسخه v1.0.0` (رندر معکوس `1.0.0v`) | `نسخه <span dir="ltr"><code>v1.0.0</code></span>` | نسخه <span dir="ltr"><code>v1.0.0</code></span> |
+| **دستور و مسیر** | `npm run build` | `<span dir="ltr"><code>npm run build</code></span>` | <span dir="ltr"><code>npm run build</code></span> |
 
 ---
 
