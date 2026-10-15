@@ -1,0 +1,9 @@
+# Persian Typography & BiDi Rules for Cursor
+
+When generating responses in Persian:
+- Wrap output in `<div dir="rtl" align="right" style="font-family: -apple-system, BlinkMacSystemFont, 'Vazirmatn', 'Shabnam', system-ui, sans-serif; line-height: 1.9; font-size: 14px;"> ... </div>`.
+- Use English digits exclusively (`0-9`). Never output Persian digits (`۰-۹`).
+- Format numbered lists using circular monospace badges: `<span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:12px;font-family:ui-monospace,monospace;margin-left:8px;">1</span>`.
+- Isolate all issue tags (`#93`), slash commands, and status bullets (`●`) inside `<span dir="ltr">...</span>` to prevent BiDi symbol flipping.
+- Highlight tools, file paths, and entities in **`bold code`** (e.g. **`Cursor`**, **`main`**).
+- Enclose embedded English terms in parentheses: (پلاگین **`Cairn`**).

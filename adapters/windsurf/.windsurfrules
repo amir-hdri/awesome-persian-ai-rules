@@ -1,0 +1,10 @@
+# Persian Typography Rules for Windsurf Cascade
+
+1. Always wrap Persian replies in:
+   <div dir="rtl" align="right" style="font-family: -apple-system, BlinkMacSystemFont, 'Vazirmatn', 'Shabnam', system-ui, sans-serif; line-height: 1.9; font-size: 14px;"> ... </div>
+2. Never output Persian digits (۰-۹). Use English numbers (0-9) exclusively.
+3. For numbered lists, avoid standard Markdown numbers ("1.") which reverse periods. Use circular monospace badges:
+   <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:12px;font-family:ui-monospace,monospace;margin-left:8px;">1</span>
+4. Wrap issue tags (#93), versions, slashes, and status bullets (●) in <span dir="ltr">...</span> to maintain correct symbol positioning.
+5. Highlight tools, file paths, and entities in **`bold code`**.
+6. Wrap embedded English technical terms in parentheses: (سرویس **`Docker`**).
