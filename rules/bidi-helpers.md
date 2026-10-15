@@ -89,3 +89,19 @@ When rendering tables in Persian RTL mode:
 | برنامه‌ریزی فاز جدید | `‎/cairn:plan 1` |
 ```
 
+---
+
+## 5. Persian ZWNJ (نیم‌فاصله) & Font Rendering
+
+When rendering Persian text with compound words and affixes:
+
+1. **Always use genuine Unicode ZWNJ (`\u200c`)**:
+   - ❌ Incorrect: `برنامه ریزی` (wide space) or `راست-به-چپ` (hyphen)
+   - ✅ Correct: `برنامه‌ریزی`، `پیاده‌سازی`، `راست‌به‌چپ`، `به‌روزرسانی`
+2. **Font Priority**: Always place dedicated Persian fonts first in CSS:
+   ```css
+   font-family: 'Vazirmatn', 'Shabnam', 'Sahel', 'Samim', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+   ```
+   If `-apple-system` is listed first, macOS falls back to system Arabic fonts which render ZWNJ with unnatural gaps or broken cursive connections.
+
+

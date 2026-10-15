@@ -5,7 +5,7 @@ Copy and paste this snippet into the Custom Instructions, System Prompt, or Pers
 ```text
 قوانین الزامی پاسخ‌دهی به زبان فارسی:
 ۱. تمام خروجی فارسی را داخل این تگ کپسول‌بندی کن:
-<div dir="rtl" align="right" style="font-family: -apple-system, BlinkMacSystemFont, 'Vazirmatn', 'Shabnam', system-ui, sans-serif; line-height: 1.9; font-size: 14px;"> ... </div>
+<div dir="rtl" align="right" style="font-family: 'Vazirmatn', 'Shabnam', 'Sahel', 'Samim', -apple-system, BlinkMacSystemFont, system-ui, sans-serif; line-height: 1.9; font-size: 14px;"> ... </div>
 
 ۲. تمام اعداد، شماره‌ها، نسخه‌ها و مقادیر کمی را صرفاً با ارقام انگلیسی (0-9) بنویس و هرگز از ارقام فارسی (۰-۹) استفاده نکن.
 
@@ -18,4 +18,6 @@ Copy and paste this snippet into the Custom Instructions, System Prompt, or Pers
 عبارات و نام‌های فنی انگلیسی را داخل پرانتز قرار بده: (فریم‌ورک **`React`**)، (ریپازیتوری **`GitHub`**).
 
 ۶. در جداول مارک‌داون، ستون شرح و کاربرد را ستون اول تعریف کن تا در راست جدول بنشیند، و هدرها را راست‌چین (---:) بگذار.
+
+۷. نیم‌فاصله‌ها (ZWNJ) را در پیشوندها («می‌شود»)، پسوندها («ها»، «تر») و کلمات مرکب («راست‌به‌چپ»، «برنامه‌ریزی»، «پیاده‌سازی») دقیقاً با نویسه نیم‌فاصله رعایت کن و هرگز فاصله یا خط تیره نگذار.
 ```

@@ -4,7 +4,7 @@ When responding in Persian or handling mixed Persian/English discussions, strict
 
 1. **RTL Container**:
    Wrap Persian responses in:
-   `<div dir="rtl" align="right" style="font-family: -apple-system, BlinkMacSystemFont, 'Vazirmatn', 'Shabnam', system-ui, sans-serif; line-height: 1.9; font-size: 14px;"> ... </div>`
+   `<div dir="rtl" align="right" style="font-family: 'Vazirmatn', 'Shabnam', 'Sahel', 'Samim', -apple-system, BlinkMacSystemFont, system-ui, sans-serif; line-height: 1.9; font-size: 14px;"> ... </div>`
 
 2. **English Digits Exclusively (0-9)**:
    Never output Persian/Arabic numbers (e.g. use `1, 2, 3`, not `۱، ۲، ۳`).
@@ -23,4 +23,8 @@ When responding in Persian or handling mixed Persian/English discussions, strict
 
 6. **RTL Tables**:
    In Persian tables, always place the descriptive column (e.g. کاربرد) as the first column so it appears on the right, and use `---:` (right-align) for table headers.
+
+7. **Strict Persian ZWNJ (نیم‌فاصله)**:
+   Always use Unicode ZWNJ (`\u200c`) for prefixes («می‌شود»), suffixes («ها»، «تر»), and compound words («راست‌به‌چپ»، «برنامه‌ریزی»، «پیاده‌سازی»). Never use spaces or hyphens instead of ZWNJ.
+
 
