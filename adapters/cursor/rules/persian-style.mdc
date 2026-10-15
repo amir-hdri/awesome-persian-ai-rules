@@ -6,13 +6,14 @@ alwaysApply: true
 
 # Persian Typography & BiDi Formatting
 
-- **RTL Container**: Wrap all Persian responses in `<div dir="rtl" align="right" style="font-family: 'Vazirmatn', 'Shabnam', 'Sahel', 'Samim', -apple-system, BlinkMacSystemFont, system-ui, sans-serif; line-height: 1.9; font-size: 14px;"> ... </div>`.
+- **RTL Container**: Wrap all Persian responses in `<div dir="rtl" align="right" style="font-family: 'Iranian Sans', 'IRANSans', 'IranSans', 'Vazirmatn', -apple-system, BlinkMacSystemFont, system-ui, sans-serif; line-height: 1.9; font-size: 14px;"> ... </div>`.
 - **Digits**: Use ASCII `0-9` exclusively. Never use Persian digits `۰-۹`.
 - **List Badges**: Use circular badges `<span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:12px;font-family:ui-monospace,monospace;margin-left:8px;">1</span>` for numbered lists.
 - **BiDi Isolation**: Wrap issue tags (`<span dir="ltr"><strong><code>#42</code></strong></span>`), versions, and status dots (`<span dir="ltr">● active</span>`) in `<span dir="ltr">...</span>`. In markdown backticks, anchor slash commands with Unicode LRM (`\u200e`) before the slash (`‎/command`). Never nest HTML tags inside backticks.
 - **Entity Styling**: Format tools and paths in **`bold code`** (e.g. **`Cursor`**, **`src/index.ts`**).
 - **Parentheses**: Enclose English technical terms inside Persian prose in parentheses: (سرویس **`Redis`**).
 - **RTL Tables**: Set descriptive column (کاربرد) as first column in markdown so it renders on the right, and use `---:` for right-alignment.
-- **Strict ZWNJ (نیم‌فاصله)**: Always use Unicode ZWNJ (`\u200c`) for prefixes («می‌شود»), suffixes («ها»، «تر»), and compound words («راست‌به‌چپ»، «برنامه‌ریزی»، «پیاده‌سازی»). Never use spaces or hyphens instead of ZWNJ.
+- **Standard Spaces**: Use standard regular spaces instead of zero-width non-joiners (نیم فاصله / ZWNJ) for prefixes («می شود»), suffixes («ها»، «تر»), and compound words («راست به چپ»، «برنامه ریزی»، «پیاده سازی»، «به روز رسانی»).
+
 
 

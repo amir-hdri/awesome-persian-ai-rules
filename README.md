@@ -95,7 +95,7 @@ curl -fsSL https://raw.githubusercontent.com/amir-hdri/awesome-persian-ai-rules/
 
 ---
 
-<div dir="rtl" align="right" style="font-family: 'Vazirmatn', 'Shabnam', 'Sahel', 'Samim', -apple-system, BlinkMacSystemFont, system-ui, sans-serif; line-height: 1.9; font-size: 14px;">
+<div dir="rtl" align="right" style="font-family: 'Iranian Sans', 'IRANSans', 'IranSans', 'Vazirmatn', 'Shabnam', -apple-system, BlinkMacSystemFont, system-ui, sans-serif; line-height: 1.9; font-size: 14px;">
 
 ## 🎯 چرا این ریپازیتوری ایجاد شد؟
 
@@ -168,7 +168,7 @@ awesome-persian-ai-rules/
 
 ## 💻 Manual Installation (نصب دستی)
 
-<div dir="rtl" align="right" style="font-family: 'Vazirmatn', 'Shabnam', 'Sahel', 'Samim', -apple-system, BlinkMacSystemFont, system-ui, sans-serif; line-height: 1.9; font-size: 14px;">
+<div dir="rtl" align="right" style="font-family: 'Iranian Sans', 'IRANSans', 'IranSans', 'Vazirmatn', 'Shabnam', -apple-system, BlinkMacSystemFont, system-ui, sans-serif; line-height: 1.9; font-size: 14px;">
 
 اگر ترجیح می‌دهید به صورت دستی فایل‌ها را اضافه کنید:
 

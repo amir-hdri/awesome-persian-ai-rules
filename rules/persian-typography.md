@@ -10,7 +10,7 @@
 ### 1.1 RTL Direction & Right Alignment Wrapper
 All Persian responses should be encapsulated in a top-level RTL container to guarantee consistent line spacing, proper right alignment, and system font fallback:
 ```html
-<div dir="rtl" align="right" style="font-family: 'Vazirmatn', 'Shabnam', 'Sahel', 'Samim', -apple-system, BlinkMacSystemFont, system-ui, sans-serif; line-height: 1.9; font-size: 14px;">
+<div dir="rtl" align="right" style="font-family: 'Iranian Sans', 'IRANSans', 'IranSans', 'Vazirmatn', -apple-system, BlinkMacSystemFont, system-ui, sans-serif; line-height: 1.9; font-size: 14px;">
   <!-- Persian Response Content -->
 </div>
 ```
@@ -66,12 +66,13 @@ You **must** isolate these elements with an explicit LTR wrapper:
 - **Slash Commands in Table Cells**: Anchor commands with Unicode LRM (`\u200e`) before the leading slash inside backticks (e.g. `` `‎/cairn:status` ``), ensuring the slash stays on the left of the command name.
 - **Clean Markdown Tables**: Always generate standard GitHub Flavored Markdown tables. Avoid raw unrendered HTML `<table>` blocks or unescaped HTML tags inside table cells.
 
-### 1.8 Strict Persian ZWNJ (نیم‌فاصله) & Word Spacing
-- **Always use genuine Unicode ZWNJ (`\u200c`)** for:
-  - Continuous/negative verbal prefixes: «می‌شود»، «نمی‌تواند»
-  - Plural and comparative suffixes: «ها»، «های»، «تر»، «ترین» («روش‌ها»، «داده‌های»، «مهم‌تر»)
-  - Compound technical words and prepositions: «راست‌به‌چپ»، «برنامه‌ریزی»، «پیاده‌سازی»، «به‌روزرسانی»، «راستی‌آزمایی»، «بسته‌بندی»، «به‌صورت»، «به‌عنوان»، «به‌کار»، «یکپارچه‌سازی»
-- **Never replace ZWNJ with a regular space** (❌ `برنامه ریزی`, `پیاده سازی`) or a hyphen (❌ `راست-به-چپ`).
+### 1.8 Standard Spaces Instead of ZWNJ (فاصله‌گذاری استاندارد)
+- **Use standard spaces (فاصله عادی)** instead of zero-width non-joiners (نیم فاصله / ZWNJ) for prefixes, suffixes, and compound words:
+  - «می شود»، «نمی تواند»
+  - «روش ها»، «داده های»، «مهم تر»، «پیچیده ترین»
+  - «راست به چپ»، «برنامه ریزی»، «پیاده سازی»، «به روز رسانی»، «راستی آزمایی»، «بسته بندی»، «به صورت»، «به عنوان»، «به کار»، «یکپارچه سازی»
+- **Avoid ZWNJ (`\u200c`)**: Use standard regular space between compound parts to guarantee uniform rendering across all text editors and terminals.
 - **Clean Punctuation Spacing**: Attach punctuation marks (`،`, `.`, `:`, `؛`, `؟`, `!`) directly to the preceding word without spaces, followed by exactly one space before the next word.
+
 
 

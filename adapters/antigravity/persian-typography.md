@@ -8,7 +8,7 @@ Add this file to `~/.gemini/config/rules/persian-typography.md` (global) or `.ge
 These rules apply to all Persian responses and mixed Persian/English conversations:
 
 1. **RTL Direction & Right Alignment**:
-   Wrap Persian responses in `<div dir="rtl" align="right" style="font-family: 'Vazirmatn', 'Shabnam', 'Sahel', 'Samim', -apple-system, BlinkMacSystemFont, system-ui, sans-serif; line-height: 1.9; font-size: 14px;"> ... </div>` to strictly enforce right-to-left text direction, right alignment, comfortable line height (1.9), and prioritize native Persian typography over fallback fonts.
+   Wrap Persian responses in `<div dir="rtl" align="right" style="font-family: 'Iranian Sans', 'IRANSans', 'IranSans', 'Vazirmatn', -apple-system, BlinkMacSystemFont, system-ui, sans-serif; line-height: 1.9; font-size: 14px;"> ... </div>` to strictly enforce right-to-left text direction, right alignment, comfortable line height (1.9), and prioritize the native IRANSans (Iranian Sans) typography.
 
 2. **Emphasis on Important Points & Tech Entities**:
    - Highlight critical takeaways, verdicts, statuses, key requirements, and action items in **bold**.
@@ -31,8 +31,9 @@ These rules apply to all Persian responses and mixed Persian/English conversatio
    - **Clean Markdown Tables**: Use standard clean GitHub Flavored Markdown tables. Avoid raw unrendered HTML `<table>` blocks or unescaped HTML tags inside table cells.
    - **High-Contrast Badges**: Never use pale, washed-out neon colors for small text. Use high-contrast, comfortable colors (`#0284c7`, `#047857`, `#b45309`) on subtle translucent backgrounds with at least 12px font size.
 
-6. **Strict Persian ZWNJ (نیم‌فاصله) & Word Spacing**:
-   - Always use genuine Unicode ZWNJ (`\u200c`) for prefixes («می‌شود»، «نمی‌تواند»), suffixes («ها»، «های»، «تر»، «ترین»), and compound words («راست‌به‌چپ»، «برنامه‌ریزی»، «پیاده‌سازی»، «به‌روزرسانی»، «راستی‌آزمایی»، «بسته‌بندی»، «به‌صورت»، «به‌عنوان»، «به‌کار»).
-   - Never replace ZWNJ with a space (❌ `برنامه ریزی`) or hyphen (❌ `راست-به-چپ`).
-   - Attach punctuation (`، . : ؛ ؟ !`) to the preceding word without spaces, followed by a single space before the next word.
+6. **Standard Spaces Instead of ZWNJ (فاصله‌گذاری استاندارد)**:
+   - Use standard spaces (فاصله عادی) instead of zero-width non-joiners (نیم فاصله / ZWNJ) for prefixes, suffixes, and compound words:
+     «می شود»، «نمی تواند»، «روش ها»، «داده های»، «مهم تر»، «راست به چپ»، «برنامه ریزی»، «پیاده سازی»، «به روز رسانی»، «راستی آزمایی»، «بسته بندی»، «به صورت»، «به عنوان»، «به کار».
+   - Avoid ZWNJ (`\u200c`).
+   - Attach punctuation (`، . : ؛ ؟ !`) directly to the preceding word without spaces, followed by a single space before the next word.
 ```
