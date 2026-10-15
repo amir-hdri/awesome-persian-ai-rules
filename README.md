@@ -18,19 +18,79 @@
 
 ---
 
-## ⚡ Quick One-Line Install (نصب فوق‌سریع با یک دستور)
+## ⚡ Quick One-Line Install (نصب تفکیک‌شده بر اساس نوع دستیار)
 
-بدون نیاز به کلون کردن مخزن، می‌توانید این قوانین را بلافاصله در هر پروژه‌ای نصب و فعال کنید:
+بدون نیاز به کلون کردن کل مخزن، می‌توانید این قوانین را به صورت مستقیم و فوری با دستور **`curl`** متناسب با دستیار مورد نظر خود نصب و فعال کنید:
+
+---
+
+### <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:12px;font-family:ui-monospace,monospace;margin-left:8px;">1</span> نصب برای دستیار **Cursor**
+> **مکانیزم عملکرد**: فایل سنتی `.cursorrules` را در ریشه و فایل مدرن `.cursor/rules/persian-style.mdc` را با قابلیت اعمال همیشگی روی کل چت و Composer ایجاد می‌کند.
 
 ```bash
-# نصب خودکار برای تمامی ایجنت‌های موجود در پوشه جاری:
-curl -fsSL https://raw.githubusercontent.com/amir-hdri/awesome-persian-ai-rules/main/install.sh | bash
-
-# یا پیکربندی یک ایجنت مشخص:
 curl -fsSL https://raw.githubusercontent.com/amir-hdri/awesome-persian-ai-rules/main/install.sh | bash -s -- --agent cursor
+```
+
+---
+
+### <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:12px;font-family:ui-monospace,monospace;margin-left:8px;">2</span> نصب برای دستیار **Claude Code (Anthropic)**
+> **مکانیزم عملکرد**: قوانین نگارشی و BiDi را به فایل `CLAUDE.md` اضافه می‌کند. در صورت وجود فایل قبلی، بدون حذف دستورات قبلی، متن قوانین به انتهای آن ضمیمه می‌شود.
+
+```bash
+# نصب اختصاصی در پروژه جاری (ایجاد یا ویرایش CLAUDE.md در ریشه):
 curl -fsSL https://raw.githubusercontent.com/amir-hdri/awesome-persian-ai-rules/main/install.sh | bash -s -- --agent claude
+
+# یا نصب سراسری در کل سیستم (~/.claude/CLAUDE.md):
+curl -fsSL https://raw.githubusercontent.com/amir-hdri/awesome-persian-ai-rules/main/install.sh | bash -s -- --agent claude --global
+```
+
+---
+
+### <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:12px;font-family:ui-monospace,monospace;margin-left:8px;">3</span> نصب برای دستیار **OpenCode** و ابزار **Cairn**
+> **مکانیزم عملکرد**: استاندارد `AGENTS.md` را به کار می‌گیرد تا تمامی تعاملات، لاگ‌ها، تسک‌ها و پاسخ‌های فارسی OpenCode و اکوسیستم Cairn منطبق بر قوانین راست‌به‌چپ تولید شوند.
+
+```bash
 curl -fsSL https://raw.githubusercontent.com/amir-hdri/awesome-persian-ai-rules/main/install.sh | bash -s -- --agent opencode
+```
+
+---
+
+### <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:12px;font-family:ui-monospace,monospace;margin-left:8px;">4</span> نصب برای **Google Antigravity**
+> **مکانیزم عملکرد**: فایل قانون اختصاصی `persian-typography.md` را در پوشه قوانین پروژه یا تنظیمات سراسری قرار می‌دهد تا خودکار در تمام پاسخ‌ها بارگذاری شود.
+
+```bash
+# نصب سراسری برای تمامی پروژه‌ها در Antigravity (پیشنهادی):
+curl -fsSL https://raw.githubusercontent.com/amir-hdri/awesome-persian-ai-rules/main/install.sh | bash -s -- --agent antigravity --global
+
+# یا نصب فقط برای مخزن/پروژه جاری (.gemini/rules/):
 curl -fsSL https://raw.githubusercontent.com/amir-hdri/awesome-persian-ai-rules/main/install.sh | bash -s -- --agent antigravity
+```
+
+---
+
+### <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:12px;font-family:ui-monospace,monospace;margin-left:8px;">5</span> نصب برای **Windsurf Cascade**
+> **مکانیزم عملکرد**: فایل پیکربندی `.windsurfrules` را در دایرکتوری ریشه پروژه می‌سازد تا دستیار Cascade در زمان تحلیل و تولید کد، خروجی فارسی را تراز و ایزوله کند.
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/amir-hdri/awesome-persian-ai-rules/main/install.sh | bash -s -- --agent windsurf
+```
+
+---
+
+### <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:12px;font-family:ui-monospace,monospace;margin-left:8px;">6</span> نصب برای **GitHub Copilot**
+> **مکانیزم عملکرد**: فایل دستورالعمل استاندارد گیت‌هاب در مسیر `.github/copilot-instructions.md` را ایجاد می‌کند تا کوپایلوت در VS Code و JetBrains از این ساختار تبعیت کند.
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/amir-hdri/awesome-persian-ai-rules/main/install.sh | bash -s -- --agent copilot
+```
+
+---
+
+### <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:12px;font-family:ui-monospace,monospace;margin-left:8px;">7</span> نصب همزمان برای تمام دستیارها در یک پروژه (All-in-One)
+> **مکانیزم عملکرد**: اگر چند توسعه‌دهنده از دستیارهای مختلف (مانند Cursor و Claude و Antigravity) روی یک پروژه مشترک کار می‌کنند، این دستور تمام فایل‌های پیکربندی را به طور کامل تنظیم می‌کند.
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/amir-hdri/awesome-persian-ai-rules/main/install.sh | bash
 ```
 
 ---
