@@ -13,7 +13,7 @@ alwaysApply: true
 - **Entity Styling**: Format tools and paths in **`bold code`** (e.g. **`Cursor`**, **`src/index.ts`**).
 - **Parentheses**: Enclose English technical terms inside Persian prose in parentheses: (سرویس **`Redis`**).
 - **RTL Tables**: Set descriptive column (کاربرد) as first column in markdown so it renders on the right, and use `---:` for right-alignment.
-- **ZWNJ (نیم‌فاصله)**: Use ZWNJ (`\u200c`) for prefixes («می‌شود»), suffixes («کتاب‌ها»، «بزرگ‌تر»), and compound words («برنامه‌ریزی»، «به‌روزرسانی») per official Persian orthography; regular space only between independent words.
+- **Standard Spaces**: Use standard regular spaces instead of zero-width non-joiners (نیم فاصله / ZWNJ) for prefixes («می شود»), suffixes («ها»، «تر»), and compound words («راست به چپ»، «برنامه ریزی»، «پیاده سازی»، «به روز رسانی»).
 
 
 

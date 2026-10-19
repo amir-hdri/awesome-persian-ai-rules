@@ -66,14 +66,14 @@ You **must** isolate these elements with an explicit LTR wrapper:
 - **Slash Commands in Table Cells**: Anchor commands with Unicode LRM (`\u200e`) before the leading slash inside backticks (e.g. `` `‎/cairn:status` ``), ensuring the slash stays on the left of the command name.
 - **Clean Markdown Tables**: Always generate standard GitHub Flavored Markdown tables. Avoid raw unrendered HTML `<table>` blocks or unescaped HTML tags inside table cells.
 
-### 1.8 نیم‌فاصله (ZWNJ) طبق نگارش رسمی فارسی
-- **Use ZWNJ (`\u200c`)** for prefixes and suffixes, per the official Persian orthography (دستور خط فارسی، فرهنگستان زبان و ادب فارسی):
-  - «می‌شود»، «نمی‌تواند»، «بخوانید»
-  - «کتاب‌ها»، «داده‌های»، «بزرگ‌تر»، «پیچیده‌ترین»
-- **Compound words** take ZWNJ between their parts:
-  - «برنامه‌ریزی»، «پیاده‌سازی»، «به‌روزرسانی»، «راستی‌آزمایی»، «یکپارچه‌سازی»، «دانش‌آموز»
-- **Separate words** take a regular space: «به صورت»، «به عنوان»، «به کار»، «راست به چپ».
+### 1.8 Standard Spaces Instead of ZWNJ (فاصله‌گذاری استاندارد)
+- **Use standard spaces (فاصله عادی)** instead of zero-width non-joiners (نیم فاصله / ZWNJ) for prefixes, suffixes, and compound words:
+  - «می شود»، «نمی تواند»
+  - «روش ها»، «داده های»، «مهم تر»، «پیچیده ترین»
+  - «راست به چپ»، «برنامه ریزی»، «پیاده سازی»، «به روز رسانی»، «راستی آزمایی»، «بسته بندی»، «به صورت»، «به عنوان»، «به کار»، «یکپارچه سازی»
+- **Avoid ZWNJ (`\u200c`)**: Use standard regular space between compound parts to guarantee uniform rendering across all text editors and terminals.
 - **Clean Punctuation Spacing**: Attach punctuation marks (`،`, `.`, `:`, `؛`, `؟`, `!`) directly to the preceding word without spaces, followed by exactly one space before the next word.
+- **Note**: This is a deliberate house-style choice for on-screen readability (ZWNJ is zero-width in most digital fonts, making compounds look cramped). It differs from the official Academy orthography (دستور خط فارسی، فرهنگستان), which prescribes ZWNJ.
 
 
 

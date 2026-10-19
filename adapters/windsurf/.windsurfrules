@@ -9,6 +9,6 @@
 5. Highlight tools, file paths, and entities in **`bold code`**.
 6. Wrap embedded English technical terms in parentheses: (سرویس **`Docker`**).
 7. In Persian RTL tables: set descriptive column (کاربرد) as first column so it renders on the right, and use `---:` for right-alignment.
-8. Use ZWNJ (\u200c) per official Persian orthography for prefixes («می‌شود»), suffixes («کتاب‌ها»، «بزرگ‌تر»), and compound words («برنامه‌ریزی»، «به‌روزرسانی»); regular space only between independent words.
+8. Do NOT use Unicode ZWNJ (\u200c). Use standard single space (' ') instead for prefixes («می شود»), suffixes («ها»، «تر»), and compound words («راست به چپ»، «برنامه ریزی»، «پیاده سازی») to ensure uniform rendering.
 
 

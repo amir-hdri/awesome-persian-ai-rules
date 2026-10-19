@@ -31,9 +31,9 @@ These rules apply to all Persian responses and mixed Persian/English conversatio
    - **Clean Markdown Tables**: Use standard clean GitHub Flavored Markdown tables. Avoid raw unrendered HTML `<table>` blocks or unescaped HTML tags inside table cells.
    - **High-Contrast Badges**: Never use pale, washed-out neon colors for small text. Use high-contrast, comfortable colors (`#0284c7`, `#047857`, `#b45309`) on subtle translucent backgrounds with at least 12px font size.
 
-6. **نیم‌فاصله (ZWNJ) طبق نگارش رسمی فارسی**:
-   - از نیم‌فاصله (`\u200c`) برای پیشوندها و پسوندها استفاده کن: «می‌شود»، «نمی‌تواند»، «کتاب‌ها»، «بزرگ‌تر».
-   - اجزای کلمات مرکب را با نیم‌فاصله بنویس: «برنامه‌ریزی»، «پیاده‌سازی»، «به‌روزرسانی».
-   - بین واژه‌های مستقل فاصلهٔ معمولی بگذار («به صورت»، «به عنوان»).
-   - علائم نگارشی (`، . : ؛ ؟ !`) را به واژهٔ قبل بچسبان و بعد از آن یک فاصله بگذار.
+6. **Standard Spaces Instead of ZWNJ (فاصله‌گذاری استاندارد)**:
+   - Use standard spaces (فاصله عادی) instead of zero-width non-joiners (نیم فاصله / ZWNJ) for prefixes, suffixes, and compound words:
+     «می شود»، «نمی تواند»، «روش ها»، «داده های»، «مهم تر»، «راست به چپ»، «برنامه ریزی»، «پیاده سازی»، «به روز رسانی»، «راستی آزمایی»، «بسته بندی»، «به صورت»، «به عنوان»، «به کار».
+   - Avoid ZWNJ (`\u200c`).
+   - Attach punctuation (`، . : ؛ ؟ !`) directly to the preceding word without spaces, followed by a single space before the next word.
 ```

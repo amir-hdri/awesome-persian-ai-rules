@@ -8,7 +8,7 @@ When generating responses in Persian:
 - Highlight tools, file paths, and entities in **`bold code`** (e.g. **`Cursor`**, **`main`**).
 - Enclose embedded English terms in parentheses: (پکیج **`Express`**).
 - In Persian RTL tables: always make the descriptive column (کاربرد) the first column so it renders on the right, and use `---:` for right-aligned text.
-- Use standard regular spaces instead of zero-width non-joiners (نیم فاصله / ZWNJ) only between independent words; use ZWNJ (`\u200c`) for prefixes («می‌شود»), suffixes («کتاب‌ها»، «بزرگ‌تر»), and compound words («برنامه‌ریزی»، «به‌روزرسانی») per official Persian orthography.
+- Use standard regular spaces instead of zero-width non-joiners (نیم فاصله / ZWNJ) for prefixes («می شود»), suffixes («ها»، «تر»), and compound words («راست به چپ»، «برنامه ریزی»، «پیاده سازی»، «به روز رسانی»).
 
 
 

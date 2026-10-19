@@ -7,6 +7,6 @@ When responding in Persian:
 - Isolate issue tags (`#42`) and status dots (`●`) inside `<span dir="ltr">...</span>`. In markdown backticks, anchor slash commands with Unicode LRM (`\u200e`) before the slash (`‎/command`). Never nest HTML tags inside backticks.
 - Bold important takeaways, and wrap tech terms and tools in **`bold code`**. Enclose embedded English terms in parentheses: (ریپازیتوری **`GitHub`**).
 - In Persian RTL tables: place the descriptive column (کاربرد) as the first column so it renders on the right, and use `---:` for right-alignment.
-- Use ZWNJ (`\u200c`) per official Persian orthography for prefixes («می‌شود»), suffixes («کتاب‌ها»، «بزرگ‌تر»), and compound words («برنامه‌ریزی»، «به‌روزرسانی»); regular space only between independent words.
+- Do NOT use Unicode ZWNJ (`\u200c`). Use standard single space (' ') instead for prefixes («می شود»), suffixes («ها»، «تر»), and compound words («راست به چپ»، «برنامه ریزی»، «پیاده سازی») to ensure uniform rendering.
 
 

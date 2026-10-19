@@ -91,14 +91,13 @@ When rendering tables in Persian RTL mode:
 
 ---
 
-## 5. نیم‌فاصله (ZWNJ) & Font Rendering
+## 5. Standard Spaces & Font Rendering
 
 When rendering Persian text with compound words and affixes:
 
-1. **Use ZWNJ (`\u200c`) per official Persian orthography**:
-   - Prefixes/suffixes: `می‌شود`، `نمی‌تواند`، `کتاب‌ها`، `بزرگ‌تر`.
-   - Compound words: `برنامه‌ریزی`، `پیاده‌سازی`، `به‌روزرسانی`.
-   - Regular space only between independent words: `به صورت`، `به عنوان`.
+1. **Use standard spaces instead of ZWNJ**:
+   - Use regular space for compound terms and affixes: `برنامه ریزی`، `پیاده سازی`، `راست به چپ`، `به روز رسانی`، `می شود`، `روش ها`.
+   - Avoid ZWNJ (`\u200c`) to guarantee uniform rendering across all text editors, terminals, and IDEs.
 2. **Font Priority**: Always place dedicated Persian fonts (especially IRANSans) first in CSS:
    ```css
    font-family: 'Iranian Sans', 'IRANSans', 'IranSans', 'Vazirmatn', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
