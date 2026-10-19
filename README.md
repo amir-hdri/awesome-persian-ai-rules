@@ -13,7 +13,6 @@
   <a href="https://github.com/amir-hdri/awesome-persian-ai-rules/stargazers"><img src="https://img.shields.io/github/stars/amir-hdri/awesome-persian-ai-rules?style=for-the-badge&logo=github&color=0284c7" alt="GitHub Stars" /></a>
   <a href="https://github.com/amir-hdri/awesome-persian-ai-rules/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-047857?style=for-the-badge" alt="License" /></a>
   <a href="#-supported-ai-agents"><img src="https://img.shields.io/badge/Agents-Cursor%20%7C%20Claude%20%7C%20Antigravity%20%7C%20OpenCode%20%7C%20Windsurf%20%7C%20Copilot-b45309?style=for-the-badge" alt="Supported Agents" /></a>
-  <img src="https://img.shields.io/badge/BiDi-100%25%20Verified-0284c7?style=for-the-badge" alt="BiDi Verified" />
 </p>
 
 ---
@@ -24,7 +23,7 @@
 
 ---
 
-### <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:12px;font-family:ui-monospace,monospace;margin-left:8px;">1</span> نصب برای دستیار **Cursor**
+### <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:12px;font-family:ui-monospace,monospace;margin-inline-end:8px;">1</span> نصب برای دستیار **Cursor**
 > **مکانیزم عملکرد**: فایل سنتی `.cursorrules` را در ریشه و فایل مدرن `.cursor/rules/persian-style.mdc` را با قابلیت اعمال همیشگی روی کل چت و Composer ایجاد می‌کند.
 
 ```bash
@@ -33,7 +32,7 @@ curl -fsSL https://raw.githubusercontent.com/amir-hdri/awesome-persian-ai-rules/
 
 ---
 
-### <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:12px;font-family:ui-monospace,monospace;margin-left:8px;">2</span> نصب برای دستیار **Claude Code (Anthropic)**
+### <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:12px;font-family:ui-monospace,monospace;margin-inline-end:8px;">2</span> نصب برای دستیار **Claude Code (Anthropic)**
 > **مکانیزم عملکرد**: قوانین نگارشی و BiDi را به فایل `CLAUDE.md` اضافه می‌کند. در صورت وجود فایل قبلی، بدون حذف دستورات قبلی، متن قوانین به انتهای آن ضمیمه می‌شود.
 
 ```bash
@@ -46,7 +45,7 @@ curl -fsSL https://raw.githubusercontent.com/amir-hdri/awesome-persian-ai-rules/
 
 ---
 
-### <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:12px;font-family:ui-monospace,monospace;margin-left:8px;">3</span> نصب برای دستیار **OpenCode** و ابزار **Cairn**
+### <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:12px;font-family:ui-monospace,monospace;margin-inline-end:8px;">3</span> نصب برای دستیار **OpenCode** و ابزار **Cairn**
 > **مکانیزم عملکرد**: استاندارد `AGENTS.md` را به کار می‌گیرد تا تمامی تعاملات، لاگ‌ها، تسک‌ها و پاسخ‌های فارسی OpenCode و اکوسیستم Cairn منطبق بر قوانین راست‌به‌چپ تولید شوند.
 
 ```bash
@@ -55,7 +54,7 @@ curl -fsSL https://raw.githubusercontent.com/amir-hdri/awesome-persian-ai-rules/
 
 ---
 
-### <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:12px;font-family:ui-monospace,monospace;margin-left:8px;">4</span> نصب برای **Google Antigravity**
+### <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:12px;font-family:ui-monospace,monospace;margin-inline-end:8px;">4</span> نصب برای **Google Antigravity**
 > **مکانیزم عملکرد**: فایل قانون اختصاصی `persian-typography.md` را در پوشه قوانین پروژه یا تنظیمات سراسری قرار می‌دهد تا خودکار در تمام پاسخ‌ها بارگذاری شود.
 
 ```bash
@@ -68,7 +67,7 @@ curl -fsSL https://raw.githubusercontent.com/amir-hdri/awesome-persian-ai-rules/
 
 ---
 
-### <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:12px;font-family:ui-monospace,monospace;margin-left:8px;">5</span> نصب برای **Windsurf Cascade**
+### <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:12px;font-family:ui-monospace,monospace;margin-inline-end:8px;">5</span> نصب برای **Windsurf Cascade**
 > **مکانیزم عملکرد**: فایل پیکربندی `.windsurfrules` را در دایرکتوری ریشه پروژه می‌سازد تا دستیار Cascade در زمان تحلیل و تولید کد، خروجی فارسی را تراز و ایزوله کند.
 
 ```bash
@@ -77,7 +76,7 @@ curl -fsSL https://raw.githubusercontent.com/amir-hdri/awesome-persian-ai-rules/
 
 ---
 
-### <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:12px;font-family:ui-monospace,monospace;margin-left:8px;">6</span> نصب برای **GitHub Copilot**
+### <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:12px;font-family:ui-monospace,monospace;margin-inline-end:8px;">6</span> نصب برای **GitHub Copilot**
 > **مکانیزم عملکرد**: فایل دستورالعمل استاندارد گیت‌هاب در مسیر `.github/copilot-instructions.md` را ایجاد می‌کند تا کوپایلوت در VS Code و JetBrains از این ساختار تبعیت کند.
 
 ```bash
@@ -86,12 +85,22 @@ curl -fsSL https://raw.githubusercontent.com/amir-hdri/awesome-persian-ai-rules/
 
 ---
 
-### <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:12px;font-family:ui-monospace,monospace;margin-left:8px;">7</span> نصب همزمان برای تمام دستیارها در یک پروژه (All-in-One)
+### <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:12px;font-family:ui-monospace,monospace;margin-inline-end:8px;">7</span> نصب همزمان برای تمام دستیارها در یک پروژه (All-in-One)
 > **مکانیزم عملکرد**: اگر چند توسعه‌دهنده از دستیارهای مختلف (مانند Cursor و Claude و Antigravity) روی یک پروژه مشترک کار می‌کنند، این دستور تمام فایل‌های پیکربندی را به طور کامل تنظیم می‌کند.
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/amir-hdri/awesome-persian-ai-rules/main/install.sh | bash
 ```
+
+### حذف قوانین (Uninstall)
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/amir-hdri/awesome-persian-ai-rules/main/install.sh | bash -s -- --uninstall
+# یا برای یک ایجنت خاص:
+curl -fsSL https://raw.githubusercontent.com/amir-hdri/awesome-persian-ai-rules/main/install.sh | bash -s -- --agent cursor --uninstall
+```
+
+> **نکته:** نصب‌کننده قبل از بازنویسی فایل‌های موجود، از آن‌ها بکاپ می‌گیرد (`<file>.bak.YYYYmmddHHMMSS`).
 
 ---
 
@@ -172,16 +181,16 @@ awesome-persian-ai-rules/
 
 اگر ترجیح می‌دهید به صورت دستی فایل‌ها را اضافه کنید:
 
-<span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:12px;font-family:ui-monospace,monospace;margin-left:8px;">1</span> **برای Cursor**:  
+<span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:12px;font-family:ui-monospace,monospace;margin-inline-end:8px;">1</span> **برای Cursor**:  
 فایل `adapters/cursor/rules/persian-style.mdc` را در پوشه `.cursor/rules/` پروژه‌تان کپی کنید.
 
-<span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:12px;font-family:ui-monospace,monospace;margin-left:8px;">2</span> **برای Claude Code**:  
+<span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:12px;font-family:ui-monospace,monospace;margin-inline-end:8px;">2</span> **برای Claude Code**:  
 محتوای `adapters/claude/CLAUDE.md` را در فایل `CLAUDE.md` ریشه پروژه‌تان اضافه کنید.
 
-<span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:12px;font-family:ui-monospace,monospace;margin-left:8px;">3</span> **برای OpenCode و Cairn**:  
+<span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:12px;font-family:ui-monospace,monospace;margin-inline-end:8px;">3</span> **برای OpenCode و Cairn**:  
 محتوای `adapters/opencode/AGENTS.md` را به انتهای `AGENTS.md` اضافه کنید.
 
-<span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:12px;font-family:ui-monospace,monospace;margin-left:8px;">4</span> **برای Google Antigravity**:  
+<span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:12px;font-family:ui-monospace,monospace;margin-inline-end:8px;">4</span> **برای Google Antigravity**:  
 فایل `adapters/antigravity/persian-typography.md` را در مسیر `~/.gemini/config/rules/` قرار دهید تا به طور خودکار در تمامی پروژه‌ها اجرا شود.
 
 </div>

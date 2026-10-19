@@ -18,7 +18,7 @@ These rules apply to all Persian responses and mixed Persian/English conversatio
 3. **Strict English Digits (0-9) & Circular Badge Numbering**:
    - Write ALL numbers, counts, phase numbers, versions, issue numbers, and metrics using standard English ASCII digits (`0-9`). NEVER use Persian/Arabic digits.
    - For numbered lists, steps, and options, use modern circular monospace badges:
-     `<span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:12px;font-family:ui-monospace,monospace;margin-left:8px;">1</span>`
+     `<span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:12px;font-family:ui-monospace,monospace;margin-inline-end:8px;">1</span>`
 
 4. **BiDi Isolation for Slashes, Issue Numbers (#93), Paths, and Badges**:
    - For slash commands, paths, and code tokens (e.g. `/cairn:work 1`, `#93`), anchor them with Unicode LRM (`\u200e`) directly before the leading symbol (e.g. `‎/cairn:work 1` or `‎#93`) inside standard markdown backticks.
@@ -31,9 +31,9 @@ These rules apply to all Persian responses and mixed Persian/English conversatio
    - **Clean Markdown Tables**: Use standard clean GitHub Flavored Markdown tables. Avoid raw unrendered HTML `<table>` blocks or unescaped HTML tags inside table cells.
    - **High-Contrast Badges**: Never use pale, washed-out neon colors for small text. Use high-contrast, comfortable colors (`#0284c7`, `#047857`, `#b45309`) on subtle translucent backgrounds with at least 12px font size.
 
-6. **Standard Spaces Instead of ZWNJ (فاصله‌گذاری استاندارد)**:
-   - Use standard spaces (فاصله عادی) instead of zero-width non-joiners (نیم فاصله / ZWNJ) for prefixes, suffixes, and compound words:
-     «می شود»، «نمی تواند»، «روش ها»، «داده های»، «مهم تر»، «راست به چپ»، «برنامه ریزی»، «پیاده سازی»، «به روز رسانی»، «راستی آزمایی»، «بسته بندی»، «به صورت»، «به عنوان»، «به کار».
-   - Avoid ZWNJ (`\u200c`).
-   - Attach punctuation (`، . : ؛ ؟ !`) directly to the preceding word without spaces, followed by a single space before the next word.
+6. **نیم‌فاصله (ZWNJ) طبق نگارش رسمی فارسی**:
+   - از نیم‌فاصله (`\u200c`) برای پیشوندها و پسوندها استفاده کن: «می‌شود»، «نمی‌تواند»، «کتاب‌ها»، «بزرگ‌تر».
+   - اجزای کلمات مرکب را با نیم‌فاصله بنویس: «برنامه‌ریزی»، «پیاده‌سازی»، «به‌روزرسانی».
+   - بین واژه‌های مستقل فاصلهٔ معمولی بگذار («به صورت»، «به عنوان»).
+   - علائم نگارشی (`، . : ؛ ؟ !`) را به واژهٔ قبل بچسبان و بعد از آن یک فاصله بگذار.
 ```

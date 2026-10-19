@@ -12,7 +12,7 @@ When replying in Persian or conducting mixed language tasks:
 
 3. **Numbered Steps**:
    Render ordered lists with circular monospace badges:
-   `<span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:12px;font-family:ui-monospace,monospace;margin-left:8px;">1</span>`
+   `<span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:12px;font-family:ui-monospace,monospace;margin-inline-end:8px;">1</span>`
 
 4. **BiDi Neutral Isolation**:
    - For markdown backticks, anchor slash commands with Unicode LRM (`\u200e`) before the slash: `‎/status`. Never nest HTML tags inside backticks.
@@ -25,8 +25,8 @@ When replying in Persian or conducting mixed language tasks:
 6. **RTL Tables**:
    In Persian tables, place the descriptive column (e.g. کاربرد) as the first column so it renders on the right, and use `---:` (right-align) for table headers.
 
-7. **Standard Spaces Instead of ZWNJ**:
-   Use standard regular spaces instead of zero-width non-joiners (نیم فاصله / ZWNJ) for prefixes («می شود»), suffixes («ها»، «تر»), and compound words («راست به چپ»، «برنامه ریزی»، «پیاده سازی»، «به روز رسانی»).
+7. **نیم‌فاصله (ZWNJ) طبق نگارش رسمی**:
+   Use ZWNJ (`\u200c`) for prefixes («می‌شود»), suffixes («کتاب‌ها»، «بزرگ‌تر»), and compound words («برنامه‌ریزی»، «به‌روزرسانی»); regular space only between independent words.
 
 
 

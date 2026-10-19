@@ -1,6 +1,6 @@
 # Persian Typography, Direction, and BiDi Standards for AI Agents
 
-> **Standard Version**: 1.0.0  
+> **Standard Version**: 1.1.0  
 > **Target Audience**: AI Coding Assistants, LLMs, Chat Agents (Antigravity, Cursor, Claude Code, OpenCode, Windsurf, Copilot)
 
 ---
@@ -22,7 +22,7 @@ All Persian responses should be encapsulated in a top-level RTL container to gua
 ### 1.3 Ordered Lists & Monospace Circular Badges (Option A)
 Standard Markdown numbered lists (e.g. `1. `, `2. `) in RTL mode frequently flip the period to the wrong side (`.1`). To eliminate this rendering defect permanently, use circular monospace badges:
 ```html
-<span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:12px;font-family:ui-monospace,monospace;margin-left:8px;">1</span>
+<span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:12px;font-family:ui-monospace,monospace;margin-inline-end:8px;">1</span>
 ```
 
 ### 1.4 BiDi Isolation for Tokens, Hashtags, and Indicators
@@ -66,12 +66,13 @@ You **must** isolate these elements with an explicit LTR wrapper:
 - **Slash Commands in Table Cells**: Anchor commands with Unicode LRM (`\u200e`) before the leading slash inside backticks (e.g. `` `‎/cairn:status` ``), ensuring the slash stays on the left of the command name.
 - **Clean Markdown Tables**: Always generate standard GitHub Flavored Markdown tables. Avoid raw unrendered HTML `<table>` blocks or unescaped HTML tags inside table cells.
 
-### 1.8 Standard Spaces Instead of ZWNJ (فاصله‌گذاری استاندارد)
-- **Use standard spaces (فاصله عادی)** instead of zero-width non-joiners (نیم فاصله / ZWNJ) for prefixes, suffixes, and compound words:
-  - «می شود»، «نمی تواند»
-  - «روش ها»، «داده های»، «مهم تر»، «پیچیده ترین»
-  - «راست به چپ»، «برنامه ریزی»، «پیاده سازی»، «به روز رسانی»، «راستی آزمایی»، «بسته بندی»، «به صورت»، «به عنوان»، «به کار»، «یکپارچه سازی»
-- **Avoid ZWNJ (`\u200c`)**: Use standard regular space between compound parts to guarantee uniform rendering across all text editors and terminals.
+### 1.8 نیم‌فاصله (ZWNJ) طبق نگارش رسمی فارسی
+- **Use ZWNJ (`\u200c`)** for prefixes and suffixes, per the official Persian orthography (دستور خط فارسی، فرهنگستان زبان و ادب فارسی):
+  - «می‌شود»، «نمی‌تواند»، «بخوانید»
+  - «کتاب‌ها»، «داده‌های»، «بزرگ‌تر»، «پیچیده‌ترین»
+- **Compound words** take ZWNJ between their parts:
+  - «برنامه‌ریزی»، «پیاده‌سازی»، «به‌روزرسانی»، «راستی‌آزمایی»، «یکپارچه‌سازی»، «دانش‌آموز»
+- **Separate words** take a regular space: «به صورت»، «به عنوان»، «به کار»، «راست به چپ».
 - **Clean Punctuation Spacing**: Attach punctuation marks (`،`, `.`, `:`, `؛`, `؟`, `!`) directly to the preceding word without spaces, followed by exactly one space before the next word.
 
 

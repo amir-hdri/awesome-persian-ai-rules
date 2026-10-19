@@ -1,6 +1,6 @@
 ---
 description: Persian typography, RTL direction, and BiDi formatting rules
-globs: *
+globs: ["*"]
 alwaysApply: true
 ---
 
@@ -8,12 +8,12 @@ alwaysApply: true
 
 - **RTL Container**: Wrap all Persian responses in `<div dir="rtl" align="right" style="font-family: 'Iranian Sans', 'IRANSans', 'IranSans', 'Vazirmatn', -apple-system, BlinkMacSystemFont, system-ui, sans-serif; line-height: 1.9; font-size: 14px;"> ... </div>`.
 - **Digits**: Use ASCII `0-9` exclusively. Never use Persian digits `۰-۹`.
-- **List Badges**: Use circular badges `<span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:12px;font-family:ui-monospace,monospace;margin-left:8px;">1</span>` for numbered lists.
+- **List Badges**: Use circular badges `<span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:12px;font-family:ui-monospace,monospace;margin-inline-end:8px;">1</span>` for numbered lists.
 - **BiDi Isolation**: Wrap issue tags (`<span dir="ltr"><strong><code>#42</code></strong></span>`), versions, and status dots (`<span dir="ltr">● active</span>`) in `<span dir="ltr">...</span>`. In markdown backticks, anchor slash commands with Unicode LRM (`\u200e`) before the slash (`‎/command`). Never nest HTML tags inside backticks.
 - **Entity Styling**: Format tools and paths in **`bold code`** (e.g. **`Cursor`**, **`src/index.ts`**).
 - **Parentheses**: Enclose English technical terms inside Persian prose in parentheses: (سرویس **`Redis`**).
 - **RTL Tables**: Set descriptive column (کاربرد) as first column in markdown so it renders on the right, and use `---:` for right-alignment.
-- **Standard Spaces**: Use standard regular spaces instead of zero-width non-joiners (نیم فاصله / ZWNJ) for prefixes («می شود»), suffixes («ها»، «تر»), and compound words («راست به چپ»، «برنامه ریزی»، «پیاده سازی»، «به روز رسانی»).
+- **ZWNJ (نیم‌فاصله)**: Use ZWNJ (`\u200c`) for prefixes («می‌شود»), suffixes («کتاب‌ها»، «بزرگ‌تر»), and compound words («برنامه‌ریزی»، «به‌روزرسانی») per official Persian orthography; regular space only between independent words.
 
 
 

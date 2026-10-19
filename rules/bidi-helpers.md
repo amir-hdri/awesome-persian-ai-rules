@@ -69,7 +69,7 @@ Certain characters are categorized as **Neutrals** or **Weak Types**, which caus
 Replace raw `1.`, `2.` with this drop-in HTML snippet:
 
 ```html
-<span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:12px;font-family:ui-monospace,monospace;margin-left:8px;">1</span>
+<span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:12px;font-family:ui-monospace,monospace;margin-inline-end:8px;">1</span>
 ```
 
 ---
@@ -91,13 +91,14 @@ When rendering tables in Persian RTL mode:
 
 ---
 
-## 5. Standard Spaces & Font Rendering
+## 5. نیم‌فاصله (ZWNJ) & Font Rendering
 
 When rendering Persian text with compound words and affixes:
 
-1. **Use standard spaces instead of ZWNJ**:
-   - Use regular space for compound terms and affixes: `برنامه ریزی`، `پیاده سازی`، `راست به چپ`، `به روز رسانی`، `می شود`، `روش ها`.
-   - Avoid ZWNJ (`\u200c`) to guarantee uniform rendering across all text editors, terminals, and IDEs.
+1. **Use ZWNJ (`\u200c`) per official Persian orthography**:
+   - Prefixes/suffixes: `می‌شود`، `نمی‌تواند`، `کتاب‌ها`، `بزرگ‌تر`.
+   - Compound words: `برنامه‌ریزی`، `پیاده‌سازی`، `به‌روزرسانی`.
+   - Regular space only between independent words: `به صورت`، `به عنوان`.
 2. **Font Priority**: Always place dedicated Persian fonts (especially IRANSans) first in CSS:
    ```css
    font-family: 'Iranian Sans', 'IRANSans', 'IranSans', 'Vazirmatn', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
