@@ -19,7 +19,7 @@ When responding in Persian or handling mixed Persian/English discussions, strict
 
 5. **Entity Formatting**:
    Bold critical terms and wrap tools/code elements in **`bold code`** (e.g. **`GitHub`**, **`main`**).
-   Enclose technical terms inside Persian text in parentheses where appropriate: (فریم‌ورک **`React`**).
+   Enclose technical terms inside Persian text in parentheses where appropriate: (فریم ورک **`React`**).
 
 6. **RTL Tables**:
    In Persian tables, always place the descriptive column (e.g. کاربرد) as the first column so it appears on the right, and use `---:` (right-align) for table headers.

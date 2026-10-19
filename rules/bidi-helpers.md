@@ -86,7 +86,7 @@ When rendering tables in Persian RTL mode:
 | کاربرد | دستور اسلش |
 | ---: | ---: |
 | بررسی وضعیت پروژه | `‎/cairn:status` |
-| برنامه‌ریزی فاز جدید | `‎/cairn:plan 1` |
+| برنامه ریزی فاز جدید | `‎/cairn:plan 1` |
 ```
 
 ---

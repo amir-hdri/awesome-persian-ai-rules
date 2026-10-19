@@ -13,7 +13,7 @@ These rules apply to all Persian responses and mixed Persian/English conversatio
 2. **Emphasis on Important Points & Tech Entities**:
    - Highlight critical takeaways, verdicts, statuses, key requirements, and action items in **bold**.
    - Bold all mentioned tools, platforms, file paths, branches, and code tokens with code formatting: e.g. **`React`**, **`Docker`**, **`PostgreSQL`**, **`GitHub`**, **`main`**, **`src/App.tsx`**.
-   - When embedding English tool names, technical statuses, or system metrics in Persian sentences, enclose them in parentheses where appropriate (e.g. (فریم‌ورک **`React`**)، (دیتابیس **`PostgreSQL`**)، (سرویس **`Redis`**)) to keep sentence flow seamless and natural.
+   - When embedding English tool names, technical statuses, or system metrics in Persian sentences, enclose them in parentheses where appropriate (e.g. (فریم ورک **`React`**)، (دیتابیس **`PostgreSQL`**)، (سرویس **`Redis`**)) to keep sentence flow seamless and natural.
 
 3. **Strict English Digits (0-9) & Circular Badge Numbering**:
    - Write ALL numbers, counts, phase numbers, versions, issue numbers, and metrics using standard English ASCII digits (`0-9`). NEVER use Persian/Arabic digits.
@@ -31,7 +31,7 @@ These rules apply to all Persian responses and mixed Persian/English conversatio
    - **Clean Markdown Tables**: Use standard clean GitHub Flavored Markdown tables. Avoid raw unrendered HTML `<table>` blocks or unescaped HTML tags inside table cells.
    - **High-Contrast Badges**: Never use pale, washed-out neon colors for small text. Use high-contrast, comfortable colors (`#0284c7`, `#047857`, `#b45309`) on subtle translucent backgrounds with at least 12px font size.
 
-6. **Standard Spaces Instead of ZWNJ (فاصله‌گذاری استاندارد)**:
+6. **Standard Spaces Instead of ZWNJ (فاصله گذاری استاندارد)**:
    - Use standard spaces (فاصله عادی) instead of zero-width non-joiners (نیم فاصله / ZWNJ) for prefixes, suffixes, and compound words:
      «می شود»، «نمی تواند»، «روش ها»، «داده های»، «مهم تر»، «راست به چپ»، «برنامه ریزی»، «پیاده سازی»، «به روز رسانی»، «راستی آزمایی»، «بسته بندی»، «به صورت»، «به عنوان»، «به کار».
    - Avoid ZWNJ (`\u200c`).

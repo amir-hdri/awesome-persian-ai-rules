@@ -66,7 +66,7 @@ You **must** isolate these elements with an explicit LTR wrapper:
 - **Slash Commands in Table Cells**: Anchor commands with Unicode LRM (`\u200e`) before the leading slash inside backticks (e.g. `` `‎/cairn:status` ``), ensuring the slash stays on the left of the command name.
 - **Clean Markdown Tables**: Always generate standard GitHub Flavored Markdown tables. Avoid raw unrendered HTML `<table>` blocks or unescaped HTML tags inside table cells.
 
-### 1.8 Standard Spaces Instead of ZWNJ (فاصله‌گذاری استاندارد)
+### 1.8 Standard Spaces Instead of ZWNJ (فاصله گذاری استاندارد)
 - **Use standard spaces (فاصله عادی)** instead of zero-width non-joiners (نیم فاصله / ZWNJ) for prefixes, suffixes, and compound words:
   - «می شود»، «نمی تواند»
   - «روش ها»، «داده های»، «مهم تر»، «پیچیده ترین»

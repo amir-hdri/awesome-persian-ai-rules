@@ -1,7 +1,7 @@
 <p align="center">
   <h1 align="center">🇮🇷 Awesome Persian AI Rules & BiDi Standards</h1>
   <p align="center">
-    <strong>قوانین استاندارد، تایپوگرافی، راست‌به‌چپ (RTL) و حل قطعی باگ‌های BiDi برای تمامی ایجنت‌های هوش مصنوعی و کدنویسی</strong>
+    <strong>قوانین استاندارد، تایپوگرافی، راست به چپ (RTL) و حل قطعی باگ های BiDi برای تمامی ایجنت های هوش مصنوعی و کدنویسی</strong>
   </p>
   <p align="center">
     <em>Curated universal Persian (Farsi) typography, RTL layout, and Bidirectional (BiDi) formatting standards for AI Coding Assistants & LLMs.</em>
@@ -17,14 +17,14 @@
 
 ---
 
-## ⚡ Quick One-Line Install (نصب تفکیک‌شده بر اساس نوع دستیار)
+## ⚡ Quick One-Line Install (نصب تفکیک شده بر اساس نوع دستیار)
 
-بدون نیاز به کلون کردن کل مخزن، می‌توانید این قوانین را به صورت مستقیم و فوری با دستور **`curl`** متناسب با دستیار مورد نظر خود نصب و فعال کنید:
+بدون نیاز به کلون کردن کل مخزن، می توانید این قوانین را به صورت مستقیم و فوری با دستور **`curl`** متناسب با دستیار مورد نظر خود نصب و فعال کنید:
 
 ---
 
 ### <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:12px;font-family:ui-monospace,monospace;margin-inline-end:8px;">1</span> نصب برای دستیار **Cursor**
-> **مکانیزم عملکرد**: فایل سنتی `.cursorrules` را در ریشه و فایل مدرن `.cursor/rules/persian-style.mdc` را با قابلیت اعمال همیشگی روی کل چت و Composer ایجاد می‌کند.
+> **مکانیزم عملکرد**: فایل سنتی `.cursorrules` را در ریشه و فایل مدرن `.cursor/rules/persian-style.mdc` را با قابلیت اعمال همیشگی روی کل چت و Composer ایجاد می کند.
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/amir-hdri/awesome-persian-ai-rules/main/install.sh | bash -s -- --agent cursor
@@ -33,7 +33,7 @@ curl -fsSL https://raw.githubusercontent.com/amir-hdri/awesome-persian-ai-rules/
 ---
 
 ### <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:12px;font-family:ui-monospace,monospace;margin-inline-end:8px;">2</span> نصب برای دستیار **Claude Code (Anthropic)**
-> **مکانیزم عملکرد**: قوانین نگارشی و BiDi را به فایل `CLAUDE.md` اضافه می‌کند. در صورت وجود فایل قبلی، بدون حذف دستورات قبلی، متن قوانین به انتهای آن ضمیمه می‌شود.
+> **مکانیزم عملکرد**: قوانین نگارشی و BiDi را به فایل `CLAUDE.md` اضافه می کند. در صورت وجود فایل قبلی، بدون حذف دستورات قبلی، متن قوانین به انتهای آن ضمیمه می شود.
 
 ```bash
 # نصب اختصاصی در پروژه جاری (ایجاد یا ویرایش CLAUDE.md در ریشه):
@@ -46,7 +46,7 @@ curl -fsSL https://raw.githubusercontent.com/amir-hdri/awesome-persian-ai-rules/
 ---
 
 ### <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:12px;font-family:ui-monospace,monospace;margin-inline-end:8px;">3</span> نصب برای دستیار **OpenCode** و ابزار **Cairn**
-> **مکانیزم عملکرد**: استاندارد `AGENTS.md` را به کار می‌گیرد تا تمامی تعاملات، لاگ‌ها، تسک‌ها و پاسخ‌های فارسی OpenCode و اکوسیستم Cairn منطبق بر قوانین راست‌به‌چپ تولید شوند.
+> **مکانیزم عملکرد**: استاندارد `AGENTS.md` را به کار می گیرد تا تمامی تعاملات، لاگ ها، تسک ها و پاسخ های فارسی OpenCode و اکوسیستم Cairn منطبق بر قوانین راست به چپ تولید شوند.
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/amir-hdri/awesome-persian-ai-rules/main/install.sh | bash -s -- --agent opencode
@@ -55,10 +55,10 @@ curl -fsSL https://raw.githubusercontent.com/amir-hdri/awesome-persian-ai-rules/
 ---
 
 ### <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:12px;font-family:ui-monospace,monospace;margin-inline-end:8px;">4</span> نصب برای **Google Antigravity**
-> **مکانیزم عملکرد**: فایل قانون اختصاصی `persian-typography.md` را در پوشه قوانین پروژه یا تنظیمات سراسری قرار می‌دهد تا خودکار در تمام پاسخ‌ها بارگذاری شود.
+> **مکانیزم عملکرد**: فایل قانون اختصاصی `persian-typography.md` را در پوشه قوانین پروژه یا تنظیمات سراسری قرار می دهد تا خودکار در تمام پاسخ ها بارگذاری شود.
 
 ```bash
-# نصب سراسری برای تمامی پروژه‌ها در Antigravity (پیشنهادی):
+# نصب سراسری برای تمامی پروژه ها در Antigravity (پیشنهادی):
 curl -fsSL https://raw.githubusercontent.com/amir-hdri/awesome-persian-ai-rules/main/install.sh | bash -s -- --agent antigravity --global
 
 # یا نصب فقط برای مخزن/پروژه جاری (.gemini/rules/):
@@ -68,7 +68,7 @@ curl -fsSL https://raw.githubusercontent.com/amir-hdri/awesome-persian-ai-rules/
 ---
 
 ### <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:12px;font-family:ui-monospace,monospace;margin-inline-end:8px;">5</span> نصب برای **Windsurf Cascade**
-> **مکانیزم عملکرد**: فایل پیکربندی `.windsurfrules` را در دایرکتوری ریشه پروژه می‌سازد تا دستیار Cascade در زمان تحلیل و تولید کد، خروجی فارسی را تراز و ایزوله کند.
+> **مکانیزم عملکرد**: فایل پیکربندی `.windsurfrules` را در دایرکتوری ریشه پروژه می سازد تا دستیار Cascade در زمان تحلیل و تولید کد، خروجی فارسی را تراز و ایزوله کند.
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/amir-hdri/awesome-persian-ai-rules/main/install.sh | bash -s -- --agent windsurf
@@ -77,7 +77,7 @@ curl -fsSL https://raw.githubusercontent.com/amir-hdri/awesome-persian-ai-rules/
 ---
 
 ### <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:12px;font-family:ui-monospace,monospace;margin-inline-end:8px;">6</span> نصب برای **GitHub Copilot**
-> **مکانیزم عملکرد**: فایل دستورالعمل استاندارد گیت‌هاب در مسیر `.github/copilot-instructions.md` را ایجاد می‌کند تا کوپایلوت در VS Code و JetBrains از این ساختار تبعیت کند.
+> **مکانیزم عملکرد**: فایل دستورالعمل استاندارد گیت هاب در مسیر `.github/copilot-instructions.md` را ایجاد می کند تا کوپایلوت در VS Code و JetBrains از این ساختار تبعیت کند.
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/amir-hdri/awesome-persian-ai-rules/main/install.sh | bash -s -- --agent copilot
@@ -86,7 +86,7 @@ curl -fsSL https://raw.githubusercontent.com/amir-hdri/awesome-persian-ai-rules/
 ---
 
 ### <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:12px;font-family:ui-monospace,monospace;margin-inline-end:8px;">7</span> نصب همزمان برای تمام دستیارها در یک پروژه (All-in-One)
-> **مکانیزم عملکرد**: اگر چند توسعه‌دهنده از دستیارهای مختلف (مانند Cursor و Claude و Antigravity) روی یک پروژه مشترک کار می‌کنند، این دستور تمام فایل‌های پیکربندی را به طور کامل تنظیم می‌کند.
+> **مکانیزم عملکرد**: اگر چند توسعه دهنده از دستیارهای مختلف (مانند Cursor و Claude و Antigravity) روی یک پروژه مشترک کار می کنند، این دستور تمام فایل های پیکربندی را به طور کامل تنظیم می کند.
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/amir-hdri/awesome-persian-ai-rules/main/install.sh | bash
@@ -100,7 +100,7 @@ curl -fsSL https://raw.githubusercontent.com/amir-hdri/awesome-persian-ai-rules/
 curl -fsSL https://raw.githubusercontent.com/amir-hdri/awesome-persian-ai-rules/main/install.sh | bash -s -- --agent cursor --uninstall
 ```
 
-> **نکته:** نصب‌کننده قبل از بازنویسی فایل‌های موجود، از آن‌ها بکاپ می‌گیرد (`<file>.bak.YYYYmmddHHMMSS`).
+> **نکته:** نصب کننده قبل از بازنویسی فایل های موجود، از آن ها بکاپ می گیرد (`<file>.bak.YYYYmmddHHMMSS`).
 
 ---
 
@@ -108,16 +108,16 @@ curl -fsSL https://raw.githubusercontent.com/amir-hdri/awesome-persian-ai-rules/
 
 ## 🎯 چرا این ریپازیتوری ایجاد شد؟
 
-پاسخ‌های فارسی در دستیارهای هوش مصنوعی (مانند **Cursor**، **Claude Code**، **OpenCode**، **Antigravity** و غیره) معمولاً با مشکلات ساختاری زیر مواجه می‌شوند:
-1. **جابه‌جایی هشتگ در ایشوها**: عبارت <span dir="ltr"><code>#42</code></span> به صورت معکوس و به شکل `42#` رندر می‌شود.
-2. **برعکس شدن نقطه در لیست‌ها**: در لیست‌های شماره‌دار استاندارد (`1.`، `2.`) نقطه در ابتدای خط و قبل از عدد رندر می‌شود (`.1`).
-3. **پریدن دات‌ها و نمادهای وضعیت**: دات وضعیت (<span dir="ltr"><code>● connected</code></span>) به انتهای جمله پرت می‌شود.
-4. **وارونه شدن اسلش در ابتدای دستورات**: فرامین اسلش (`/command`) به دلیل خنثی بودن اسلش در BiDi به انتهای کلمه پرتاب می‌شوند (`command/`).
-5. **به‌هم‌ریختگی ستون‌های جدول**: جابه‌جا شدن ترتیب ستون‌ها در RTL و چپ‌چین شدن نامناسب محتوا.
-6. **نامنظمی فاصله‌ها و فونت**: عدم استفاده از فونت سیستم مناسب و ارتفاع خط غیر استاندارد که خوانایی را کاهش می‌دهد.
-7. **ارقام نامتجانس**: تداخل ارقام فارسی و انگلیسی در اسکریپت‌ها، توکن‌های کد و کوئری‌ها.
+پاسخ های فارسی در دستیارهای هوش مصنوعی (مانند **Cursor**، **Claude Code**، **OpenCode**، **Antigravity** و غیره) معمولاً با مشکلات ساختاری زیر مواجه می شوند:
+1. **جابه جایی هشتگ در ایشوها**: عبارت <span dir="ltr"><code>#42</code></span> به صورت معکوس و به شکل `42#` رندر می شود.
+2. **برعکس شدن نقطه در لیست ها**: در لیست های شماره دار استاندارد (`1.`، `2.`) نقطه در ابتدای خط و قبل از عدد رندر می شود (`.1`).
+3. **پریدن دات ها و نمادهای وضعیت**: دات وضعیت (<span dir="ltr"><code>● connected</code></span>) به انتهای جمله پرت می شود.
+4. **وارونه شدن اسلش در ابتدای دستورات**: فرامین اسلش (`/command`) به دلیل خنثی بودن اسلش در BiDi به انتهای کلمه پرتاب می شوند (`command/`).
+5. **به هم ریختگی ستون های جدول**: جابه جا شدن ترتیب ستون ها در RTL و چپ چین شدن نامناسب محتوا.
+6. **نامنظمی فاصله ها و فونت**: عدم استفاده از فونت سیستم مناسب و ارتفاع خط غیر استاندارد که خوانایی را کاهش می دهد.
+7. **ارقام نامتجانس**: تداخل ارقام فارسی و انگلیسی در اسکریپت ها، توکن های کد و کوئری ها.
 
-این پروژه یک **استاندارد مرجع و ماژولار** برای حل ریشه‌ای این معضلات به همراه فایل‌های پیکربندی آماده برای تمامی دستیارها ارائه می‌دهد.
+این پروژه یک **استاندارد مرجع و ماژولار** برای حل ریشه ای این معضلات به همراه فایل های پیکربندی آماده برای تمامی دستیارها ارائه می دهد.
 
 </div>
 
@@ -125,14 +125,14 @@ curl -fsSL https://raw.githubusercontent.com/amir-hdri/awesome-persian-ai-rules/
 
 ## 📊 Before vs. After (مقایسه قبل و بعد)
 
-| مورد بررسی | مارک‌داون معمولی (دارای باگ BiDi) | با استانداردهای Awesome Persian AI Rules | نتیجه نهایی |
+| مورد بررسی | مارک داون معمولی (دارای باگ BiDi) | با استانداردهای Awesome Persian AI Rules | نتیجه نهایی |
 | :--- | :--- | :--- | :--- |
 | **شناسه ایشو** | `ایشو #42 حل شد` | `ایشو <span dir="ltr"><strong><code>#42</code></strong></span> حل شد` | ایشو <span dir="ltr"><strong><code>#42</code></strong></span> حل شد |
-| **لیست شماره‌دار** | `1. بهینه‌سازی دیتابیس` (رندر به صورت `.1 بهینه‌سازی دیتابیس`) | `<span style="...">1</span> بهینه‌سازی دیتابیس` | <span style="display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:11px;font-family:ui-monospace,monospace;">1</span> بهینه‌سازی دیتابیس |
+| **لیست شماره دار** | `1. بهینه سازی دیتابیس` (رندر به صورت `.1 بهینه سازی دیتابیس`) | `<span style="...">1</span> بهینه سازی دیتابیس` | <span style="display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:11px;font-family:ui-monospace,monospace;">1</span> بهینه سازی دیتابیس |
 | **نشانگر وضعیت** | `● connected` | `<span dir="ltr">● connected</span>` | <span dir="ltr" style="display:inline-flex;align-items:center;gap:4px;padding:2px 8px;border-radius:4px;background:rgba(16,185,129,0.12);color:#047857;font-weight:bold;font-size:12px;">● connected</span> |
 | **دستور و مسیر** | `npm run build` | `<span dir="ltr"><code>npm run build</code></span>` | <span dir="ltr"><code>npm run build</code></span> |
 | **دستور اسلش** | `/cairn:status` (رندر معکوس به صورت `cairn:status/`) | `‎/cairn:status` (تثبیت با یونیکد LRM) | `‎/cairn:status` |
-| **جداول RTL** | ستون چپ‌چین (`:---`) و افتادن ستون اصلی در چپ | ستون اول = کاربرد (در سمت راست) با تراز `---:` | جدول مرتب، راست‌چین و خوانا |
+| **جداول RTL** | ستون چپ چین (`:---`) و افتادن ستون اصلی در چپ | ستون اول = کاربرد (در سمت راست) با تراز `---:` | جدول مرتب، راست چین و خوانا |
 
 
 ---
@@ -156,11 +156,11 @@ curl -fsSL https://raw.githubusercontent.com/amir-hdri/awesome-persian-ai-rules/
 ```text
 awesome-persian-ai-rules/
 ├── README.md                      # راهنمای جامع و معرفی پروژه
-├── LICENSE                        # مجوز متن‌باز MIT
-├── install.sh                     # اسکریپت نصب یک‌خطی چند ایجنتی
+├── LICENSE                        # مجوز متن باز MIT
+├── install.sh                     # اسکریپت نصب یک خطی چند ایجنتی
 ├── rules/
 │   ├── persian-typography.md      # مشخصات فنی و استانداردهای نگارش فارسی
-│   └── bidi-helpers.md            # چیت‌شیت جامع حل مشکلات کاراکترهای خنثی و BiDi
+│   └── bidi-helpers.md            # چیت شیت جامع حل مشکلات کاراکترهای خنثی و BiDi
 ├── adapters/                      # قوانین آماده برای هر دستیار
 │   ├── antigravity/               # قوانین برای Antigravity
 │   ├── claude/                    # قوانین برای Claude Code
@@ -168,9 +168,9 @@ awesome-persian-ai-rules/
 │   ├── opencode/                  # قوانین برای OpenCode و Cairn
 │   ├── windsurf/                  # قوانین برای Windsurf
 │   ├── copilot/                   # قوانین برای GitHub Copilot
-│   └── prompts/                   # اسنیپت برای چت‌بات‌های وب
+│   └── prompts/                   # اسنیپت برای چت بات های وب
 └── examples/
-    └── badge-showcase.html        # پیش‌نمایش گرافیکی بج‌ها و کارت‌ها
+    └── badge-showcase.html        # پیش نمایش گرافیکی بج ها و کارت ها
 ```
 
 ---
@@ -179,19 +179,19 @@ awesome-persian-ai-rules/
 
 <div dir="rtl" align="right" style="font-family: 'Iranian Sans', 'IRANSans', 'IranSans', 'Vazirmatn', 'Shabnam', -apple-system, BlinkMacSystemFont, system-ui, sans-serif; line-height: 1.9; font-size: 14px;">
 
-اگر ترجیح می‌دهید به صورت دستی فایل‌ها را اضافه کنید:
+اگر ترجیح می دهید به صورت دستی فایل ها را اضافه کنید:
 
 <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:12px;font-family:ui-monospace,monospace;margin-inline-end:8px;">1</span> **برای Cursor**:  
-فایل `adapters/cursor/rules/persian-style.mdc` را در پوشه `.cursor/rules/` پروژه‌تان کپی کنید.
+فایل `adapters/cursor/rules/persian-style.mdc` را در پوشه `.cursor/rules/` پروژه تان کپی کنید.
 
 <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:12px;font-family:ui-monospace,monospace;margin-inline-end:8px;">2</span> **برای Claude Code**:  
-محتوای `adapters/claude/CLAUDE.md` را در فایل `CLAUDE.md` ریشه پروژه‌تان اضافه کنید.
+محتوای `adapters/claude/CLAUDE.md` را در فایل `CLAUDE.md` ریشه پروژه تان اضافه کنید.
 
 <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:12px;font-family:ui-monospace,monospace;margin-inline-end:8px;">3</span> **برای OpenCode و Cairn**:  
 محتوای `adapters/opencode/AGENTS.md` را به انتهای `AGENTS.md` اضافه کنید.
 
 <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:rgba(56,189,248,0.15);color:#0284c7;font-weight:bold;font-size:12px;font-family:ui-monospace,monospace;margin-inline-end:8px;">4</span> **برای Google Antigravity**:  
-فایل `adapters/antigravity/persian-typography.md` را در مسیر `~/.gemini/config/rules/` قرار دهید تا به طور خودکار در تمامی پروژه‌ها اجرا شود.
+فایل `adapters/antigravity/persian-typography.md` را در مسیر `~/.gemini/config/rules/` قرار دهید تا به طور خودکار در تمامی پروژه ها اجرا شود.
 
 </div>
 
@@ -199,13 +199,13 @@ awesome-persian-ai-rules/
 
 ## 🌟 Support & Starring (حمایت از پروژه)
 
-اگر این پروژه توانسته است مشکلات نگارشی و به‌هم‌ریختگی متون راست‌به‌چپ در ایجنت‌های هوش مصنوعی شما را حل کند، لطفاً با **ثبت ستاره (Star ⭐️)** از این پروژه حمایت کنید تا توسعه‌دهندگان بیشتری بتوانند از آن بهره‌مند شوند!
+اگر این پروژه توانسته است مشکلات نگارشی و به هم ریختگی متون راست به چپ در ایجنت های هوش مصنوعی شما را حل کند، لطفاً با **ثبت ستاره (Star ⭐️)** از این پروژه حمایت کنید تا توسعه دهندگان بیشتری بتوانند از آن بهره مند شوند!
 
 [![Star History Chart](https://api.star-history.com/svg?repos=amir-hdri/awesome-persian-ai-rules&type=Date)](https://star-history.com/#amir-hdri/awesome-persian-ai-rules&Date)
 
 ---
 
-## 🏷️ Keywords & Topics (کلمات کلیدی و هشتگ‌ها)
+## 🏷️ Keywords & Topics (کلمات کلیدی و هشتگ ها)
 
 `#awesome` `#awesome-list` `#persian` `#farsi` `#rtl` `#bidi` `#ai-agents` `#cursor-rules` `#claude-code` `#opencode` `#windsurf` `#antigravity` `#github-copilot` `#llm` `#prompt-engineering` `#developer-tools` `#typography` `#bidirectional-text`
 
